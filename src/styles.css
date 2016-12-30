@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Jaapokki';
+  src: url('./assets/fonts/jaapokki-regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/jaapokki-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/jaapokki-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
+
 body{
 	background-color: #333;
 	background: url('./assets/images/background.png');
@@ -16,6 +25,8 @@ body{
 	align-items: center;
 	justify-content: space-between;
 	background: url('./assets/images/background.png');
+
+	font-family: 'Jaapokki';
 }
 
 .navbar-nav{
