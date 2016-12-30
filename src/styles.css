@@ -3,7 +3,22 @@ body{
 	background-color: #333;
 	background: url('./assets/images/background.png');
 
-	padding-top: 5rem;
+	padding-top: 6rem;
 
 	color: #FFF;
+}
+
+.navbar{
+
+	height: 6rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: url('./assets/images/background.png');
+}
+
+.navbar-nav{
+	/*Float to the right*/
+    margin-left: auto;
 }
