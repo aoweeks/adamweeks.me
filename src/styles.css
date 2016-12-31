@@ -3,7 +3,7 @@
   font-family: 'Jaapokki';
   src: url('./assets/fonts/jaapokki-regular.eot'); /* IE9 Compat Modes */
   src: url('./assets/fonts/jaapokki-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('./assets/fonts/jaapokki-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/jaapokki-regular.ttf')  format('truetype') /* Safari, Android, iOS */
 }
 
 
@@ -26,10 +26,28 @@ body{
 	justify-content: space-between;
 	background: url('./assets/images/background.png');
 
-	font-family: 'Jaapokki';
+	font-family: 'Jaapokki', sans-serif;
+}
+
+.navbar-brand{
+	font-size: 2.75em;
 }
 
 .navbar-nav{
 	/*Float to the right*/
     margin-left: auto;
+
+    font-size: 1.5em;
+}
+
+.navbar-nav a{
+	color: #FF7200 !important;
+	letter-spacing: 0.1em;
+	padding: 0.5em;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+}
+
+.navbar-nav a:hover{
+	color: #FFFFFF !important;
 }
