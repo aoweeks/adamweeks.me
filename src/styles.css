@@ -11,8 +11,9 @@
 body{
 	background-color: #333;
 	background: url('./assets/images/background.png');
+	background-size: 50rem 50rem;
 
-	padding-top: 6rem;
+	padding-top: 9rem;
 
 	color: #FFF;
 }
@@ -24,13 +25,29 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	background: url('./assets/images/background.png');
+	background-size: 50rem 50rem;
 
 	font-family: 'Jaapokki', sans-serif;
 }
 
+#nav-fader{
+	height: 2.5rem;
+
+	background: url('./assets/images/background.png');
+	background-size: 50rem 50rem;
+	background-position: 0rem -6rem;
+
+	position: fixed;
+	width: 100%;
+	top: 6rem; /*navbar's height*/
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    /*-moz-mask-image:-moz-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+}
+
 .navbar-brand{
-	font-size: 2.75em;
+	font-size: 2.75rem;
 }
 
 .navbar-nav{
@@ -40,14 +57,93 @@ body{
     font-size: 1.5em;
 }
 
-.navbar-nav a{
-	color: #FF7200 !important;
-	letter-spacing: 0.1em;
-	padding: 0.5em;
-	margin-left: 0.25em;
-	margin-right: 0.25em;
+.navbar-nav a {
+	color: #FFF !important;
+	letter-spacing: 0.1rem;
+	padding: 0.5rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	position: relative;
+
 }
 
-.navbar-nav a:hover{
-	color: #FFFFFF !important;
+.navbar-nav a:hover {
+	color: #FF7200 !important;
+}
+
+.navbar-nav a::after, 
+.nabar-nav a::before {
+	position: absolute;
+
+	width: 0%;
+	height: 0%;
+	content: '';
+
+
+    -webkit-transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+    transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+
+
+.navbar-nav a::before{
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.navbar-nav a::after{
+	top: 0;
+	left: 0;
+}
+
+.navbar-nav a:hover::before,
+.navbar-nav a:focus::before,
+.navbar-nav a:hover::after,
+.navbar-nav a:focus::after {
+
+	border-color: #FF7200;
+	border-style: solid;
+
+
+	height: 100%;
+	width: 100%;
+}
+
+
+.navbar-nav a:hover::before,
+.navbar-nav a:focus::before {
+
+	border-width: 0px 0px 3px 3px;
+}
+
+
+.navbar-nav a:hover::after,
+.navbar-nav a:focus::after {
+
+	border-width: 3px 3px 0px 0px;
+
+}
+
+
+/* Overline From Left */
+.navbar-nav a {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+.navbar-nav a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+.navbar-nav a:hover:before, .navbar-nav a:focus:before, .navbar-nav a:active:before {
+  height: 100%;
+  width: 100%;
+
 }
