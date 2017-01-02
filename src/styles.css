@@ -10,12 +10,17 @@
 
 body{
 	background-color: #333;
-	background: url('./assets/images/background.png');
-	background-size: 50rem 50rem;
+	background: url('./assets/images/background1.png');
+	background-size: 60rem 60rem;
 
 	padding-top: 9rem;
 
 	color: #FFF;
+}
+
+.naughty-o{
+
+	margin-left: -0.05em;
 }
 
 .navbar{
@@ -26,25 +31,25 @@ body{
 	align-items: center;
 	justify-content: space-between;
 
-	background: url('./assets/images/background.png');
-	background-size: 50rem 50rem;
+	background: url('./assets/images/background3.png');
+	background-size: 60rem 60rem;
 
 	font-family: 'Jaapokki', sans-serif;
 }
 
-#nav-fader{
+/*#nav-fader{
 	height: 2.5rem;
 
-	background: url('./assets/images/background.png');
-	background-size: 50rem 50rem;
+	background: url('./assets/images/background1.png');
+	background-size: 60rem 60rem;
 	background-position: 0rem -6rem;
 
 	position: fixed;
 	width: 100%;
-	top: 6rem; /*navbar's height*/
+	top: 6rem; /*navbar's height
 	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    /*-moz-mask-image:-moz-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
-}
+    /*-moz-mask-image:-moz-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}*/
 
 .navbar-brand{
 	font-size: 2.75rem;
@@ -64,7 +69,7 @@ body{
 	letter-spacing: 0.5rem;
 
 	/* Compensating for Jaapokki's weird spacing issues*/
-	padding: 0.75rem 0.7rem 0.5rem 1.2rem !important;
+	padding: 0.75rem 0.8rem 0.5rem 1.3rem !important;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 
@@ -98,14 +103,14 @@ body{
 	bottom: 0;
 	right: 0;
 
-	border-width: 0px 0px 3px 3px;
+	border-width: 0rem 0rem 0.25rem 0.25rem;
 }
 
 .navbar-nav a:after{
 	top: 0;
 	left: 0;
 
-	border-width: 3px 3px 0px 0px;
+	border-width: 0.25rem 0.25rem 0rem 0rem;
 }
 
 .navbar-nav a:hover:before,
