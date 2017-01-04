@@ -6,11 +6,19 @@ import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ArtPageComponent } from './art-page/art-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { CodePageComponent } from './code-page/code-page.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePageComponent,
+    ArtPageComponent,
+    AboutPageComponent,
+    CodePageComponent
   ],
   imports: [
     BrowserModule,
