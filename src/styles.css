@@ -68,7 +68,7 @@ body{
 
 }
 
-.navbar-nav a {
+.nav-link-box {
 	position: relative;
 
 	color: #FFF !important;
@@ -82,15 +82,15 @@ body{
 
 }
 
-.navbar-nav a:hover,
-.navbar-nav a:focus {
+.navbar-nav a:hover .nav-link-box,
+.navbar-nav a:focus .nav-link-box {
 	color: #FF7200 !important;
 }
 
 
 /* 'DRAW BORDER' LINK EFFECT*/
-.navbar-nav a:before,
-.navbar-nav a:after{
+.nav-link-box:before,
+.nav-link-box:after{
 
   content: "";
   position: absolute;
@@ -106,24 +106,26 @@ body{
 
 }
 
-.navbar-nav a:before{
+.nav-link-box:before{
 	bottom: 0;
 	right: 0;
 
 	border-width: 0rem 0rem 0.25rem 0.25rem;
 }
 
-.navbar-nav a:after{
+.nav-link-box:after{
 	top: 0;
 	left: 0;
 
 	border-width: 0.25rem 0.25rem 0rem 0rem;
 }
 
-.navbar-nav a:hover:before,
-.navbar-nav a:focus:before,
-.navbar-nav a:hover:after,
-.navbar-nav a:focus:after {
+.active-link .nav-link-box{
+	color: #FF7200;
+}
+
+.active-link .nav-link-box:before,
+.active-link .nav-link-box:after {
 
   height: 100%;
   width: 100%;

@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar navbar-fixed-top navbar-dark"
 	[style.background-position]="getBackgroundPosition()">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" routerLink="/">
   	
   	<svg version="1.1" id="nav-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 viewBox="0 0 55.437 26.577" enable-background="new 0 0 55.437 26.577" xml:space="preserve">
@@ -18,14 +18,13 @@
   </a>
   <ul class="nav navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" routerLink="/art" routerLinkActive="active-link">ART<span class="sr-only">(current)</span>
-      	</a>
+      <a class="nav-link" routerLink="/art" routerLinkActive="active-link"><span class="nav-link-box">ART</span><!-- <span class="sr-only">(current)</span> --></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">CODE</a>
+      <a class="nav-link" routerLink="/code" routerLinkActive="active-link"><span class="nav-link-box">CODE</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">AB<span class="naughty-o">O</span>UT</a>
+      <a class="nav-link" routerLink="/about" routerLinkActive="active-link"><span class="nav-link-box">AB<span class="naughty-o">O</span>UT</span></a>
     </li>
   </ul>
 </nav><!-- 
@@ -33,42 +32,8 @@
 	[style.background-position]="getBackgroundPosition(96)"
 	[hidden]="!backgroundOffset"">
 </div> -->
+<router-outlet></router-outlet>
 
-<div class="container-fluid">
-
-	<div class="row">
-		<div class="col-xs-1">
-			<a href="#" class="arrow-link">
-				<svg version="1.1" id="prev-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					 viewBox="0 0 26.021 26.577" enable-background="new 0 0 26.021 26.577" xml:space="preserve">
-				<g>
-					<path fill="#FFF" d="M26.021,26.577H0L13.014,0L26.021,26.577z M5.156,23.361h15.709L13.013,7.315L5.156,23.361z"/>
-				</g>
-				</svg>
-			</a>
-		</div>
-		<div class="col-xs">
-			
-		</div>
-		<div class="col-xs">
-			<h2><span class="lead-cap">F</span>IRSTNAME <span class="lead-cap">L</span>ASTNAME</h2>
-			<br>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue enim, fringilla non tristique quis, hendrerit ut augue. Maecenas sed enim euismod, eleifend leo ac, suscipit justo. In porta pellentesque elit, vitae rutrum turpis interdum quis. Morbi quis urna sit amet neque suscipit euismod.</p>
-
-			<p>Phasellus posuere pellentesque augue, sed eleifend justo. Donec blandit, metus vel laoreet facilisis, dolor orci porttitor mauris, ac convallis sem diam in elit. Integer ac tortor ante. Sed condimentum velit est, a aliquam erat faucibus et. Morbi sit amet sapien nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-		</div>
-		<div class="col-xs-1" align="center">
-			<a href="#" class="arrow-link">
-				<svg version="1.1" id="next-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					 viewBox="0 0 26.021 26.577" enable-background="new 0 0 26.021 26.577" xml:space="preserve">
-				<g>
-					<path fill="#FFF" d="M26.021,26.577H0L13.014,0L26.021,26.577z M5.156,23.361h15.709L13.013,7.315L5.156,23.361z"/>
-				</g>
-				</svg>
-			</a>
-		</div>
-	</div>
 
 
 
@@ -254,4 +219,3 @@
 	  {{title}}
 	  Lorem ipsum
 	</h1> -->
-</div>
