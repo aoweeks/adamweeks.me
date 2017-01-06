@@ -179,3 +179,12 @@ h2{
 .arrow-link:hover path{
 	fill: #F2642A;
 }
+
+/*==================*/
+
+.page-title{
+	font-family: 'Jaapokki', sans-serif;
+	font-size: 2.25rem;
+	letter-spacing: 0.1em;
+	padding: 1rem;
+}
