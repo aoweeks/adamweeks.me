@@ -18,6 +18,10 @@ body{
 	color: #FFF;
 }
 
+*:focus{
+	outline: none !important;
+}
+
 .naughty-o{
 
 	margin-left: -0.05em;
@@ -82,9 +86,11 @@ body{
 
 }
 
+
+
 .navbar-nav a:hover .nav-link-box,
 .navbar-nav a:focus .nav-link-box {
-	color: #FF7200 !important;
+	color: #F2642A !important;
 }
 
 
@@ -99,7 +105,7 @@ body{
   height: 0%;
   width: 0%;
 
-  border-color: #FF7200;
+  border-color: #F2642A;
   border-style: solid;
 
   -webkit-transition: width 0.3s ease-out 0.3s, height 0.3s ease-out, visibility 0s linear 0.6s;
@@ -121,7 +127,7 @@ body{
 }
 
 .active-link .nav-link-box{
-	color: #FF7200;
+	color: #F2642A !important;
 }
 
 .active-link .nav-link-box:before,
@@ -141,12 +147,12 @@ body{
 .row{
 	font-size: 1.5rem;
 	font-family: 'Raleway';
-	color: #DDD;
+	color: #FFF;
 }
 
 .lead-cap{
 	font-size: 1.25em;
-	color: #FF7200;
+	color: #F2642A;
 }
 
 
@@ -171,5 +177,5 @@ h2{
 }
 
 .arrow-link:hover path{
-	fill: #FF7200;
+	fill: #F2642A;
 }

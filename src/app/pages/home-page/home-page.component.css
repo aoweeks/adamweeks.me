@@ -1,0 +1,74 @@
+#justify-wrapper{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+}
+
+#name-title{
+
+	font-size: 3rem;
+	font-family: 'Jaapokki', sans-serif;
+
+	display: inline-block;
+
+	letter-spacing: 0.5em;
+
+	border-style: solid;
+	border-color: #F2642A;
+	border-width: 0em 0em 0.1em 0em;
+
+	padding-bottom: 0.2em;
+}
+
+#A, #W{
+	height: 1.125em;
+	width: auto;
+}
+
+#A{
+	margin-left: 0.1em;
+	margin-right: 0.5em; 
+}
+
+#W{
+	margin-left: -0.5em;
+	margin-right: 0.25em; 
+}
+
+#bad-ess{
+	margin-left: -0.15em;
+	margin-right: -0.45em;
+}
+
+#art-plus-code{
+
+	font-size: 2rem;
+	font-family: 'Jaapokki', sans-serif;
+	
+	margin-top: 0.25em;
+}
+
+#plus{
+	color: #F2642A;
+}
+
+#down-arrow{
+	display: inline-block;
+	align-self: flex-end;
+	position: fixed;
+
+	left: calc(50% - 1em);
+	height: auto;
+	width: 2em;
+
+	bottom: 1.5em;
+	
+	transform: rotate(180deg);
+}
