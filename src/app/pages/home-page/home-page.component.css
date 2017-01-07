@@ -15,6 +15,7 @@
 
 	font-size: 3rem;
 	font-family: 'Jaapokki', sans-serif;
+	font-weight: normal;
 
 	display: inline-block;
 
@@ -68,7 +69,31 @@
 	height: auto;
 	width: 2em;
 
-	bottom: 1.5em;
+	bottom: 2.5em;
 	
 	transform: rotate(180deg);
+}
+
+.bounce{
+	animation: bounce 1.75s ease-in-out infinite;
+}
+
+.bounce:hover{
+	animation-play-state: paused;
+}
+
+.bounce:hover path{
+	fill: #F2642A;
+}
+
+@keyframes bounce{
+	0% {
+		transform: rotate(180deg) translateY(0em);
+	}
+	50% {
+		transform: rotate(180deg) translateY(2em);
+	}
+	100% {
+		transform: rotate(180deg) translateY(0em);
+	}
 }
