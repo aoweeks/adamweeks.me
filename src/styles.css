@@ -61,7 +61,7 @@ body{
 }
 
 #nav-logo{
-	height: 3rem;
+	height: 4rem;
 	width: auto;
 	margin-left: 0.5rem;
 }
@@ -187,4 +187,20 @@ h2{
 	font-size: 2.25rem;
 	letter-spacing: 0.1em;
 	padding: 1rem;
+}
+
+/*======================*/
+
+.triangle{
+	transition: transform 0.5s ease-out;
+}
+
+#nav-logo:hover #triangle-1{
+	stroke: #FFF;
+	transform: translate(10.047px, 1.871px) rotate(180deg);
+}
+
+#nav-logo:hover #triangle-2{
+	stroke: #FFF;
+	transform: translate(28.047px, 1.871px) rotate(180deg);
 }
