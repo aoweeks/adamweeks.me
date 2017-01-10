@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ArtPageComponent } from './pages/art-page/art-page.component';
+import { GalleryPageComponent } from './pages/gallery-page/gallery-page.component';
+import { ArtworkPageComponent } from './pages/artwork-page/artwork-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { CodePageComponent } from './pages/code-page/code-page.component';
 
@@ -19,7 +21,9 @@ import { CodePageComponent } from './pages/code-page/code-page.component';
     HomePageComponent,
     ArtPageComponent,
     AboutPageComponent,
-    CodePageComponent
+    CodePageComponent,
+    GalleryPageComponent,
+    ArtworkPageComponent
   ],
   imports: [
     BrowserModule,
