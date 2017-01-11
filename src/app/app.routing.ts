@@ -9,7 +9,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 const APP_ROUTES: Routes = [
 	{ path: '', component: HomePageComponent, pathMatch: 'full' },
 	{ path: 'art', component: ArtPageComponent },
-	{ path: 'art/gallery/', component: GalleryPageComponent },
+	{ path: 'art/gallery', component: GalleryPageComponent },
 	{ path: 'art/gallery/:id', component: ArtworkPageComponent },
 	{ path: 'code', component: CodePageComponent },
 	{ path: 'about', component: AboutPageComponent }
