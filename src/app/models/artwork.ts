@@ -17,4 +17,25 @@ export class ArtWork {
 
 	}
 
+	getTitle(){
+		return this.title;
+	}
+
+	getUrl(){
+		return this.url;
+	}
+
+	getDate(){
+		return this.date;
+	}
+
+	getMedium(){
+		return this.medium;
+	}
+
+	getReferences(){
+		return this.references;
+	}
+
+
 }
