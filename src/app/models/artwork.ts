@@ -1,4 +1,4 @@
-export class ArtWork {
+export class Artwork {
 
 	private title: string;
 	private url: string;
