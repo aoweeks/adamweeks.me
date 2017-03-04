@@ -14,6 +14,8 @@ import { ArtworkPageComponent } from './pages/artwork-page/artwork-page.componen
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { CodePageComponent } from './pages/code-page/code-page.component';
 
+import { ArtListService } from './services/art-list.service';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CodePageComponent } from './pages/code-page/code-page.component';
     Routing,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    ArtListService
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

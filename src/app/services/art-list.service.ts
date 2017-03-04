@@ -7,7 +7,9 @@ export class ArtListService {
 
   Artworks: Artwork[] = [];
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {
+  	console.log("ALService running!");
+  }
 
   ArtworkPopulator(){
 
