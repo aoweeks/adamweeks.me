@@ -2,17 +2,21 @@ export class Artwork {
 
 	private title: string;
 	private url: string;
-	private date: number;
+	private date: string;
 	private medium: string;
+	private type: string;
+	private text: string;
 	private references: string[];
 
 	constructor(title: string, url: string, date: number,
-				medium: string, references: string[]){
+				medium: string, type: string, text: string, references: string[]){
 
 		this.title = title;
 		this.url = url;
 		this.date = date;
 		this.medium = medium;
+		this.type = type;
+		this.text = text;
 		this.references = references;
 
 	}
@@ -31,6 +35,14 @@ export class Artwork {
 
 	getMedium(){
 		return this.medium;
+	}
+
+	getType(){
+		return this.type;
+	}
+
+	getText(){
+		return this.text;
 	}
 
 	getReferences(){

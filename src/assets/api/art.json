@@ -1,18 +1,31 @@
 {
 	"art":[
 		{
-			"title": "Benedict Cumberbatch",
-			"url": "test",
-			"date": 1,
-			"medium": "pencil",
-			"references": [""]
+			"title": "Peachy",
+			"url": "peachy",
+			"date": "2013-01-01T00:00:00.000Z",
+			"medium": "Digital",
+			"type": "Illustration",
+			"text": "",
+			"references": ["Super Mario"]
 		},
 		{
-			"title": "Test 2",
-			"url": "test2",
-			"date": 0,
-			"medium": "digital",
-			"references": [""]
+			"title": "Benedict Cumberbatch",
+			"url": "benedict-cumberbatch",
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait: Realistic",
+			"text": "as Sherlock Holmes in Sherlock",
+			"references": ["Sherlock"]
+		},
+		{
+			"title": "Emilia Clarke",
+			"url": "emilia-clarke",
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait: Realistic",
+			"text": "as Sherlock Holmes in Sherlock",
+			"references": ["Game of Thrones"]
 		}
 
 	]
