@@ -10,7 +10,7 @@ import { Error404PageComponent } from './pages/error-404-page/error-404-page.com
 
 const APP_ROUTES: Routes = [
 	{ path: '', component: HomePageComponent, pathMatch: 'full' },
-	{ path: 'art', component: ArtPageComponent },
+	{ path: 'art', component: GalleryPageComponent }, //Need to change back to artpagecomponent later
 	{ path: 'art/gallery', component: GalleryPageComponent },
 	{ path: 'art/:id', component: ArtworkPageComponent },
 	{ path: 'code', component: CodePageComponent },
