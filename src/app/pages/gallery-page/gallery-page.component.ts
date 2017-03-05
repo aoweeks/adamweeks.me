@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtListService } from '../../services/art-list.service';
+import { Artwork } from '../../models/artwork';
 
 @Component({
   selector: 'app-gallery-page',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryPageComponent implements OnInit {
 
-  constructor() { }
+	artworks: Artwork[];
+  constructor( private artListService: ArtListService ) { }
 
   ngOnInit() {
+  	this.artworks = this.artListService.getAllArtworks();
   }
 
 }

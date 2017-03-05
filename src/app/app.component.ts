@@ -1,4 +1,5 @@
 import { Component, HostListener} from '@angular/core';
+import { ArtListService } from './services/art-list.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,10 @@ import { Component, HostListener} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+	constructor(private artListService: ArtListService){
+
+	}
 
 	private backgroundOffset: number;
 

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+
+import { Artwork } from '../../models/artwork';
+import { ArtListService } from '../../services/art-list.service';
 
 @Component({
   selector: 'app-artwork-page',
@@ -10,8 +13,9 @@ export class ArtworkPageComponent implements OnInit {
 
   private sub: any;
   private id: string;
+  private artwork: Artwork;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute, private artListService: ArtListService) { }
   
   ngOnInit() {
       // Subscribe to route params
@@ -19,8 +23,11 @@ export class ArtworkPageComponent implements OnInit {
 
         this.id = params['id'];
 
-       // // Retrieve Pet with Id route param
-       //  this.petService.findPetById(id).subscribe(dog => this.dog = dog);
+        // // Retrieve Pet with Id route param
+        this.artwork = this.artListService.findArtworkById(this.id);//.subscribe(artwork => this.artwork = artwork);
+        if(this.artwork == null){
+          this.router.navigateByUrl('/404');
+        }
     });
   }
 
