@@ -8,7 +8,7 @@ export class Artwork {
 	private text: string;
 	private references: string[];
 
-	constructor(title: string, url: string, date: number,
+	constructor(title: string, url: string, date: string,
 				medium: string, type: string, text: string, references: string[]){
 
 		this.title = title;
