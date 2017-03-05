@@ -5,6 +5,8 @@ import { GalleryPageComponent } from './pages/gallery-page/gallery-page.componen
 import { ArtworkPageComponent } from './pages/artwork-page/artwork-page.component';
 import { CodePageComponent } from './pages/code-page/code-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
+
 
 const APP_ROUTES: Routes = [
 	{ path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -12,7 +14,9 @@ const APP_ROUTES: Routes = [
 	{ path: 'art/gallery', component: GalleryPageComponent },
 	{ path: 'art/gallery/:id', component: ArtworkPageComponent },
 	{ path: 'code', component: CodePageComponent },
-	{ path: 'about', component: AboutPageComponent }
+	{ path: 'about', component: AboutPageComponent },
+	{ path: '404', component: Error404PageComponent },
+	{ path: '**', redirectTo: '/404' }
 ];
 
 

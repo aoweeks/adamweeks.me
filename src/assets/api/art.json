@@ -1,17 +1,19 @@
-art:[
-	{
-		title: '',
-		url: '',
-		date: 0,
-		medium: '',
-		references: ['']
-	},
-	{
-		title: '',
-		url: '',
-		date: 0,
-		medium: '',
-		references: ['']
-	}
+{
+	"art":[
+		{
+			"title": "Test",
+			"url": "test",
+			"date": 1,
+			"medium": "pencil",
+			"references": [""]
+		},
+		{
+			"title": "Test 2",
+			"url": "test2",
+			"date": 0,
+			"medium": "digital",
+			"references": [""]
+		}
 
-]
+	]
+}
