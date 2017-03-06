@@ -1,5 +1,4 @@
 import { Component, HostListener} from '@angular/core';
-import { ArtListService } from './services/art-list.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +7,7 @@ import { ArtListService } from './services/art-list.service';
 })
 export class AppComponent {
 
-	constructor(private artListService: ArtListService){
-
+	constructor(){
 	}
 
 	private backgroundOffset: number;

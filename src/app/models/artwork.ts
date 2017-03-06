@@ -2,20 +2,25 @@ export class Artwork {
 
 	private title: string;
 	private url: string;
+	private additionalImages: Object[];
 	private date: string;
 	private medium: string;
 	private type: string;
+	private fileFormat: string;
 	private text: string;
 	private references: string[];
 
-	constructor(title: string, url: string, date: string,
-				medium: string, type: string, text: string, references: string[]){
+	constructor(title: string, url: string, additionalImages: Object[],
+		date: string, medium: string, type: string, fileFormat: string,
+		text: string, references: string[]){
 
 		this.title = title;
 		this.url = url;
+		this.additionalImages = additionalImages;
 		this.date = date;
 		this.medium = medium;
 		this.type = type;
+		this.fileFormat = fileFormat;
 		this.text = text;
 		this.references = references;
 
@@ -29,6 +34,10 @@ export class Artwork {
 		return this.url;
 	}
 
+	getAdditionalImages(){
+		return this.additionalImages;
+	}
+
 	getDate(){
 		return this.date;
 	}
@@ -39,6 +48,10 @@ export class Artwork {
 
 	getType(){
 		return this.type;
+	}
+
+	getFileFormat(){
+		return this.fileFormat;
 	}
 
 	getText(){

@@ -3,27 +3,33 @@
 		{
 			"title": "Peachy",
 			"url": "peachy",
+			"additional-images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
 			"medium": "Digital",
 			"type": "Illustration",
+			"file-format": "png",
 			"text": "",
 			"references": ["Super Mario"]
 		},
 		{
 			"title": "Benedict Cumberbatch",
 			"url": "benedict-cumberbatch",
+			"additional-images": {},
 			"date": "2014-01-01T00:00:00.000Z",
 			"medium": "Charcoal/Graphite",
 			"type": "Portrait: Realistic",
+			"fileformat": "jpg",
 			"text": "as Sherlock Holmes in Sherlock",
 			"references": ["Sherlock"]
 		},
 		{
 			"title": "Emilia Clarke",
 			"url": "emilia-clarke",
+			"additional-images": {},
 			"date": "2014-01-01T00:00:00.000Z",
 			"medium": "Charcoal/Graphite",
 			"type": "Portrait: Realistic",
+			"fileformat": "jpg",
 			"text": "as Sherlock Holmes in Sherlock",
 			"references": ["Game of Thrones"]
 		}

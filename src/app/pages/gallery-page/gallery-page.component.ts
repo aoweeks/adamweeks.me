@@ -10,6 +10,11 @@ import { Artwork } from '../../models/artwork';
 export class GalleryPageComponent implements OnInit {
 
 	artworks: Artwork[];
+
+	media: string[];
+	types: string[];
+	references: string[];
+	
   constructor( private artListService: ArtListService ) { }
 
   ngOnInit() {

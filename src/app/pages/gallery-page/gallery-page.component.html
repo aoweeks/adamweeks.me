@@ -1,18 +1,34 @@
-<p>
-  <a routerLink="/art/benedict-cumberbatch">Benedict Cumberbatch</a>
-</p>
+<div class="container-fluid">
+	<div class="row">
+		<div id="art-filters-pane" class="col-xs-4">
+		</div>
+		<div id="art-gallery-pane" class="col-xs-8">
 
-<p>
-  <a routerLink="/art/peachy">Peachy</a>
-</p>
+			<div class="row">
 
-<p>
-  <a routerLink="/art/emilia-clarke">Emilia Clarke</a>
-</p>
+				<div *ngFor="let artwork of artworks" class="col-xs-4">
+					<img class="gallery-thumbnail"/><!--  [src]="assets/"  (load)="" /> -->
+					<p class="gallery-title">{{ artwork.title }}</p>
+				</div>
 
-<p>
-  <a routerLink="/art/other">Other</a>
-</p>
+			</div>
+			<!--
+			<p>
+			  <a routerLink="/art/benedict-cumberbatch">Benedict Cumberbatch</a>
+			</p>
 
+			<p>
+			  <a routerLink="/art/peachy">Peachy</a>
+			</p>
 
+			<p>
+			  <a routerLink="/art/emilia-clarke">Emilia Clarke</a>
+			</p>
 
+			<p>
+			  <a routerLink="/art/other">Other</a>
+			</p>
+			 -->
+		</div>
+	</div>
+</div>

@@ -25,7 +25,10 @@ export class ArtListService{
 
 
   	for(let artwork of artworks){
-  		this.artList.push(new Artwork( artwork.title, artwork.url, artwork.date, artwork.medium, artwork.type, artwork.text, artwork.references) );
+  		this.artList.push(new Artwork( artwork.title, artwork.url,
+  			artwork.additionalImages, artwork.date, artwork.medium,
+  			artwork.type, artwork.fileFormat, artwork.text,
+  			artwork.references) );
   	}
 
   	console.log(this.artList);
@@ -51,6 +54,10 @@ export class ArtListService{
 
   getAllArtworks(){
   	return this.artList;
+  }
+
+  getFilteredArtworks(media: string[], types: string[], references: string[]){
+  	
   }
 
 
