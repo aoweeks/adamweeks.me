@@ -9,7 +9,7 @@
 				<div *ngFor="let artwork of artworks" class="col-xs-4">
 					<a routerLink="/art/{{ artwork.url }}">
 						<div class="gallery-card">
-							<img class="gallery-thumbnail" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}"/><!--  [src]="assets/"  (load)="" /> -->
+							<img class="gallery-thumbnail" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded(artwork.title)"/><!--  [src]="assets/"  (load)="" /> -->
 							<p class="gallery-title text-center">{{ artwork.title }}</p>
 						</div>
 					</a>

@@ -21,4 +21,8 @@ export class GalleryPageComponent implements OnInit {
   	this.artworks = this.artListService.getAllArtworks();
   }
 
+  artworkLoaded(title: string){
+  	console.log(title + " loaded!");
+  }
+
 }
