@@ -17,9 +17,9 @@
 			"additionalimages": {},
 			"date": "2014-01-01T00:00:00.000Z",
 			"medium": "Charcoal/Graphite",
-			"type": "Portrait: Realistic",
+			"type": "Portrait",
 			"fileformat": "jpg",
-			"text": "as Sherlock Holmes in Sherlock",
+			"text": "Benedict Cumberbatch as Sherlock Holmes in Sherlock",
 			"references": ["Sherlock"]
 		},
 		{
@@ -28,10 +28,76 @@
 			"additionalimages": {},
 			"date": "2014-01-01T00:00:00.000Z",
 			"medium": "Charcoal/Graphite",
-			"type": "Portrait: Realistic",
+			"type": "Portrait",
 			"fileformat": "jpg",
-			"text": "as Sherlock Holmes in Sherlock",
+			"text": "Emilia Clarke as D_______ Stormborn in Game of Thrones",
 			"references": ["Game of Thrones"]
+		},
+		{
+			"title": "Samuel L. Jackson",
+			"url": "samuel-l-jackson",
+			"additionalimages": {}, 
+			"date": "2015-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Samuel L. Jackson as Jules ______ in Pulp Fiction",
+			"references": ["Pulp Fiction"]
+		},
+		{
+			"title": "Clive Owen",
+			"url": "clive-owen",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Clive Owen as Dwight _________ in Sin City",
+			"references": ["Sherlock"]
+		},
+		{
+			"title": "Matt Smith",
+			"url": "matt-smth",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Matt Smith as The Eleventh Doctor in Doctor Who",
+			"references": ["Game of Thrones"]
+		},
+		{
+			"title": "Tough Grader",
+			"url": "tough-grader",
+			"additionalimages": {}, 
+			"date": "2013-01-01T00:00:00.000Z",
+			"medium": "Digital",
+			"type": "Illustration",
+			"fileformat": "png",
+			"text": "",
+			"references": ["Lord of the Rings"]
+		},
+		{
+			"title": "Bryan Cranston",
+			"url": "bryan-cranston",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Bryan Cranston as Walter White in Breaking Bad",
+			"references": ["Breaking Bad"]
+		},
+		{
+			"title": "Sarah Michelle Gellar",
+			"url": "sarah-michelle-gellar",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Sarah Michelle Gellar as Buffy Summers in Buffy the Vampire Slayer",
+			"references": ["Buffy the Vampire Slayer"]
 		}
 
 	]
