@@ -3,18 +3,18 @@
 		{
 			"title": "Peachy",
 			"url": "peachy",
-			"additional-images": {}, 
+			"additionalimages": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
 			"medium": "Digital",
 			"type": "Illustration",
-			"file-format": "png",
+			"fileformat": "png",
 			"text": "",
 			"references": ["Super Mario"]
 		},
 		{
 			"title": "Benedict Cumberbatch",
 			"url": "benedict-cumberbatch",
-			"additional-images": {},
+			"additionalimages": {},
 			"date": "2014-01-01T00:00:00.000Z",
 			"medium": "Charcoal/Graphite",
 			"type": "Portrait: Realistic",
@@ -25,7 +25,7 @@
 		{
 			"title": "Emilia Clarke",
 			"url": "emilia-clarke",
-			"additional-images": {},
+			"additionalimages": {},
 			"date": "2014-01-01T00:00:00.000Z",
 			"medium": "Charcoal/Graphite",
 			"type": "Portrait: Realistic",

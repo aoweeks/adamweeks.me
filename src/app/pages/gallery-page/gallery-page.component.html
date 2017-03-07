@@ -7,8 +7,12 @@
 			<div class="row">
 
 				<div *ngFor="let artwork of artworks" class="col-xs-4">
-					<img class="gallery-thumbnail"/><!--  [src]="assets/"  (load)="" /> -->
-					<p class="gallery-title">{{ artwork.title }}</p>
+					<a routerLink="/art/{{ artwork.url }}">
+						<div class="gallery-card">
+							<img class="gallery-thumbnail" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}"/><!--  [src]="assets/"  (load)="" /> -->
+							<p class="gallery-title text-center">{{ artwork.title }}</p>
+						</div>
+					</a>
 				</div>
 
 			</div>

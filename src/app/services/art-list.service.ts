@@ -26,8 +26,8 @@ export class ArtListService{
 
   	for(let artwork of artworks){
   		this.artList.push(new Artwork( artwork.title, artwork.url,
-  			artwork.additionalImages, artwork.date, artwork.medium,
-  			artwork.type, artwork.fileFormat, artwork.text,
+  			artwork.additionalimages, artwork.date, artwork.medium,
+  			artwork.type, artwork.fileformat, artwork.text,
   			artwork.references) );
   	}
 
