@@ -98,6 +98,28 @@
 			"fileformat": "jpg",
 			"text": "Sarah Michelle Gellar as Buffy Summers in Buffy the Vampire Slayer",
 			"references": ["Buffy the Vampire Slayer"]
+		},
+		{
+			"title": "Elvis Presley",
+			"url": "elvis-presley",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "",
+			"references": ["Music"]
+		},
+		{
+			"title": "Idris Elba",
+			"url": "idris-elba",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Idris Elba as John Luther in Luther",
+			"references": ["Luther"]
 		}
 
 	]
