@@ -9,30 +9,15 @@
 				<div *ngFor="let artwork of artworks" class="col-xs-4">
 					<a routerLink="/art/{{ artwork.url }}">
 						<div class="gallery-card">
-							<img class="gallery-thumbnail" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded(artwork.title)"/><!--  [src]="assets/"  (load)="" /> -->
+							<img class="gallery-thumbnail" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}"
+								(load)="artworkLoaded(artwork.title)"/>
 							<p class="gallery-title text-center">{{ artwork.title }}</p>
 						</div>
 					</a>
 				</div>
 
 			</div>
-			<!--
-			<p>
-			  <a routerLink="/art/benedict-cumberbatch">Benedict Cumberbatch</a>
-			</p>
-
-			<p>
-			  <a routerLink="/art/peachy">Peachy</a>
-			</p>
-
-			<p>
-			  <a routerLink="/art/emilia-clarke">Emilia Clarke</a>
-			</p>
-
-			<p>
-			  <a routerLink="/art/other">Other</a>
-			</p>
-			 -->
+	
 		</div>
 	</div>
 </div>
