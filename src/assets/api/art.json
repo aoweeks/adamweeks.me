@@ -120,6 +120,17 @@
 			"fileformat": "jpg",
 			"text": "Idris Elba as John Luther in Luther",
 			"references": ["Luther"]
+		},
+		{
+			"title": "Peter Dinklage",
+			"url": "peter-dinklage",
+			"additionalimages": {},
+			"date": "2014-01-01T00:00:00.000Z",
+			"medium": "Charcoal/Graphite",
+			"type": "Portrait",
+			"fileformat": "jpg",
+			"text": "Peter Dinklage as Tyrion Lannister in Game of Thrones",
+			"references": ["Game of Thrones"]
 		}
 
 	]
