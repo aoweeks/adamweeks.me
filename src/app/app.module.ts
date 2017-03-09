@@ -16,6 +16,7 @@ import { CodePageComponent } from './pages/code-page/code-page.component';
 import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
 
 import { ArtListService } from './services/art-list.service';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ArtListService } from './services/art-list.service';
     CodePageComponent,
     GalleryPageComponent,
     ArtworkPageComponent,
-    Error404PageComponent
+    Error404PageComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
