@@ -1,7 +1,16 @@
+.row{
+
+	margin-bottom: 3rem;
+}
+
 .gallery-card{
 
 	height: 100%;
 	width: 100%;
+
+
+	background: url('/assets/images/background3.png');
+	background-size: 60rem 60rem;
 
 	.gallery-thumbnail{
 		width: 90%;
