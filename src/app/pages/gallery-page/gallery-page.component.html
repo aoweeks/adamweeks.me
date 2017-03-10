@@ -9,13 +9,14 @@
 				<div *ngFor="let artwork of artworks" class="col-xs-4">
 					<a routerLink="/art/{{ artwork.url }}">
 						<div class="gallery-card">
+							<spinner [class.unloaded]="loadedThumbnails[artwork.url]"></spinner>
 							<img class="gallery-thumbnail" id="{{ artwork.url }}" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded($event)" [class.loaded]="loadedThumbnails[artwork.url]" />
 							<p class="gallery-title text-center">{{ artwork.title }}</p>
 						</div>
 					</a>
 				</div>
 
-				<spinner></spinner>
+
 			</div>
 	
 		</div>

@@ -20,11 +20,21 @@
 		transition: opacity 0.5s;
 
 		position: relative;
-		top: 5%;
+		top: 50%;
 		left: 5%;
 	}
 
 	.loaded{
 		opacity: 1;
+	}
+
+	spinner{
+		position: relative;
+		top: 50%;
+		left: 10%;
+	}
+
+	.unloaded{
+		display: none;
 	}
 }
