@@ -8,6 +8,7 @@
 	height: 100%;
 	width: 100%;
 
+	align: center;
 
 	background: url('/assets/images/background3.png');
 	background-size: 60rem 60rem;
@@ -15,5 +16,15 @@
 	.gallery-thumbnail{
 		width: 90%;
 		height: auto;
+		opacity: 0;
+		transition: opacity 0.5s;
+
+		position: relative;
+		top: 5%;
+		left: 5%;
+	}
+
+	.loaded{
+		opacity: 1;
 	}
 }

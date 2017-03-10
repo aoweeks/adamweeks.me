@@ -16,15 +16,22 @@ export class GalleryPageComponent implements OnInit {
 	media: string[];
 	types: string[];
 	references: string[];
+
+  loadedThumbnails: Object = new Object;
 	
   constructor( private artListService: ArtListService ) { }
 
   ngOnInit() {
   	this.artworks = this.artListService.getAllArtworks();
+
   }
 
-  artworkLoaded(title: string){
-  	console.log(title + " loaded!");
+  artworkLoaded(event: any){
+
+    var target = event.target.id;
+
+  	this.loadedThumbnails[target] = true;
+    console.log(this.loadedThumbnails);
   }
 
 }
