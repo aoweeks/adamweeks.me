@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ArtListService } from '../../services/art-list.service';
 import { Artwork } from '../../models/artwork';
 
+import { SpinnerComponent } from '../../components/spinner/spinner.component';
+
 @Component({
   selector: 'app-gallery-page',
   templateUrl: './gallery-page.component.html',

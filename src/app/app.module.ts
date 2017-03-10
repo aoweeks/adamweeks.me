@@ -16,7 +16,8 @@ import { CodePageComponent } from './pages/code-page/code-page.component';
 import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
 
 import { ArtListService } from './services/art-list.service';
-import { SpinnerComponent } from './spinner/spinner.component';
+
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 
 @NgModule({
