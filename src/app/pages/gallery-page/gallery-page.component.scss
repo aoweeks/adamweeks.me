@@ -8,7 +8,7 @@
 	height: 100%;
 	width: 100%;
 
-	align: center;
+	text-align: center;
 
 	background: url('/assets/images/background3.png');
 	background-size: 60rem 60rem;
@@ -20,21 +20,43 @@
 		transition: opacity 0.5s;
 
 		position: relative;
-		top: 50%;
-		left: 5%;
+		// top: 50%;
+		// left: 5%;
+
+		z-index: 100;
 	}
 
 	.loaded{
 		opacity: 1;
 	}
 
+
+	.gallery-title{
+		color: #FFF;
+		font-family: 'Jaapokki', sans-serif;
+		font-size: 1.25rem;
+		margin-top: 0.5rem;
+	}
+
 	spinner{
 		position: relative;
-		top: 50%;
+		// top: 50%;
 		left: 10%;
+		transition-delay: 1s;
+		z-index: 10;
 	}
 
 	.unloaded{
 		display: none;
 	}
+}
+
+a:hover{
+	text-decoration: none;
+
+}
+
+.gallery-card:hover .gallery-title{
+		color: #F2642A;
+		text-decoration: none;
 }

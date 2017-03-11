@@ -1,17 +1,19 @@
 <div class="container-fluid">
 	<div class="row">
-		<div id="art-filters-pane" class="col-xs-4">
+		<div id="art-filters-pane" class="col-xs-4 col-md-3 col-xl-2">
 		</div>
-		<div id="art-gallery-pane" class="col-xs-8">
+		<div id="art-gallery-pane" class="col-xs-8 col-md-9 col-xl-10">
 
 			<div class="row">
 
-				<div *ngFor="let artwork of artworks" class="col-xs-4">
+				<div *ngFor="let artwork of artworks" class="col-xs-6 col-md-4 col-xl-3">
 					<a routerLink="/art/{{ artwork.url }}">
 						<div class="gallery-card">
-							<spinner [class.unloaded]="loadedThumbnails[artwork.url]"></spinner>
-							<img class="gallery-thumbnail" id="{{ artwork.url }}" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded($event)" [class.loaded]="loadedThumbnails[artwork.url]" />
-							<p class="gallery-title text-center">{{ artwork.title }}</p>
+							<div class="image-box">
+								<spinner [class.unloaded]="loadedThumbnails[artwork.url]"></spinner>
+								<img class="gallery-thumbnail" id="{{ artwork.url }}" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded($event)" [class.loaded]="loadedThumbnails[artwork.url]" />
+								<h3 class="gallery-title">{{ artwork.title }}</h3>
+							</div>
 						</div>
 					</a>
 				</div>
