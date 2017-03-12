@@ -22,7 +22,7 @@ export class GalleryPageComponent implements OnInit {
   constructor( private artListService: ArtListService ) { }
 
   ngOnInit() {
-  	this.artworks = this.artListService.getAllArtworks();
+  	this.artworks = this.artListService.getFilteredSortedArtworks();
 
   }
 

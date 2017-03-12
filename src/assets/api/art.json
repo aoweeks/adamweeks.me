@@ -9,7 +9,7 @@
 			"type": "Illustration",
 			"fileformat": "png",
 			"text": "",
-			"references": ["Super Mario"]
+			"references": ["Super Mario", "Video Games"]
 		},
 		{
 			"title": "Benedict Cumberbatch",
@@ -20,7 +20,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Benedict Cumberbatch as Sherlock Holmes in Sherlock",
-			"references": ["Sherlock"]
+			"references": ["Sherlock", "Film/TV"]
 		},
 		{
 			"title": "Emilia Clarke",
@@ -31,7 +31,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Emilia Clarke as D_______ Stormborn in Game of Thrones",
-			"references": ["Game of Thrones"]
+			"references": ["Game of Thrones", "Film/TV"]
 		},
 		{
 			"title": "Samuel L. Jackson",
@@ -42,7 +42,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Samuel L. Jackson as Jules ______ in Pulp Fiction",
-			"references": ["Pulp Fiction"]
+			"references": ["Pulp Fiction", "Film/TV"]
 		},
 		{
 			"title": "Clive Owen",
@@ -53,7 +53,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Clive Owen as Dwight _________ in Sin City",
-			"references": ["Sherlock"]
+			"references": ["Sin City", "Film/TV"]
 		},
 		{
 			"title": "Matt Smith",
@@ -64,7 +64,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Matt Smith as The Eleventh Doctor in Doctor Who",
-			"references": ["Game of Thrones"]
+			"references": ["Doctor Who", "Film/TV"]
 		},
 		{
 			"title": "Tough Grader",
@@ -75,7 +75,7 @@
 			"type": "Illustration",
 			"fileformat": "png",
 			"text": "",
-			"references": ["Lord of the Rings"]
+			"references": ["Lord of the Rings", "Film/TV"]
 		},
 		{
 			"title": "Bryan Cranston",
@@ -86,7 +86,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Bryan Cranston as Walter White in Breaking Bad",
-			"references": ["Breaking Bad"]
+			"references": ["Breaking Bad", "Film/TV"]
 		},
 		{
 			"title": "Sarah Michelle Gellar",
@@ -97,7 +97,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Sarah Michelle Gellar as Buffy Summers in Buffy the Vampire Slayer",
-			"references": ["Buffy the Vampire Slayer"]
+			"references": ["Buffy the Vampire Slayer", "Film/TV"]
 		},
 		{
 			"title": "Elvis Presley",
@@ -119,7 +119,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Idris Elba as John Luther in Luther",
-			"references": ["Luther"]
+			"references": ["Luther", "Film/TV"]
 		},
 		{
 			"title": "Peter Dinklage",
@@ -130,7 +130,7 @@
 			"type": "Portrait",
 			"fileformat": "jpg",
 			"text": "Peter Dinklage as Tyrion Lannister in Game of Thrones",
-			"references": ["Game of Thrones"]
+			"references": ["Game of Thrones", "Film/TV"]
 		}
 
 	]
