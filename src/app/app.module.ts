@@ -18,6 +18,7 @@ import { Error404PageComponent } from './pages/error-404-page/error-404-page.com
 import { ArtListService } from './services/art-list.service';
 
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { FilterMenuComponent } from './components/filter-menu/filter-menu.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     GalleryPageComponent,
     ArtworkPageComponent,
     Error404PageComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    FilterMenuComponent
   ],
   imports: [
     BrowserModule,

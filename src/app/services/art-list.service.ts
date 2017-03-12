@@ -8,9 +8,9 @@ export class ArtListService{
 	// data;
   private artList: Artwork[] = [];
   public artFilters: any = {
-    media: {"Charcoal/Graphite": true},
-    types: {"Portrait": true},
-    references: {"Film/TV": true} 
+    media: {"Charcoal/Graphite": true, "Digital": true},
+    types: {"Portrait": true, "Illustration": true},
+    references: {"Film/TV": true, "Music": true} 
   };
 
   constructor(private http: Http) {
@@ -63,7 +63,6 @@ export class ArtListService{
       let typesMatch: boolean = false;
       let referencesMatch: boolean = false;
 
-      console.log("Media: ", this.artFilters.media);
       for(let medium in this.artFilters.media) {
         if(this.artFilters.media[medium] == true){
           if(artwork.getMedium() == medium) mediaMatch = true;
@@ -79,7 +78,10 @@ export class ArtListService{
       for(let reference in this.artFilters.references) {
         if(this.artFilters.references[reference] == true){
           for(let artworkReference of artwork.getReferences()){
-            if(artworkReference == reference) referencesMatch = true;
+            if(artworkReference == reference){
+              referencesMatch = true;
+              console.log(artwork.getTitle(), artworkReference, reference);
+            }
           }
         }
       }
