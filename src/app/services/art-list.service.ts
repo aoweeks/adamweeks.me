@@ -5,12 +5,11 @@ import { Artwork } from '../models/artwork';
 @Injectable()
 export class ArtListService{
 
-	// data;
   private artList: Artwork[] = [];
-  public artFilters: any = {
-    media: {"Charcoal/Graphite": true, "Digital": true},
+  private artFilters: any = {
+    media: {"Charcoal/Graphite": false, "Digital": true},
     types: {"Portrait": true, "Illustration": true},
-    references: {"Film/TV": true, "Music": true} 
+    references: {"Film/TV": true, "Music": true, "Video Games": true} 
   };
 
   constructor(private http: Http) {
@@ -80,7 +79,6 @@ export class ArtListService{
           for(let artworkReference of artwork.getReferences()){
             if(artworkReference == reference){
               referencesMatch = true;
-              console.log(artwork.getTitle(), artworkReference, reference);
             }
           }
         }
@@ -93,6 +91,30 @@ export class ArtListService{
     return filteredList;
 
   }
+
+
+  /*======== Filter Stuff =========*/
+
+
+  //Return list of filters (e.g. Charcoal/Graphite) as strings, for a given filter
+  public getFilterKeys(filterType: string): string[]{
+    return Object.keys(this.artFilters[filterType]);
+  }
+
+  //Return whether filter is on, given which filter type, and which filter
+  public getFilterValue(filterType: string, whichFilter): boolean{
+    console.log(this.artFilters[filterType][whichFilter]);
+    return this.artFilters[filterType][whichFilter];
+  }
+
+  //Toggle whether a particular filter is on
+  public setFilterValue(filterType: string, whichFilter): void{
+    this.artFilters[filterType][whichFilter] = !this.artFilters[filterType][whichFilter];
+    console.log(this.artFilters);
+  }
+
+
+
 
 
 

@@ -1,3 +1,26 @@
-<p>
-  filter-menu works!
-</p>
+<h3>MEDIUM</h3>
+<div *ngFor="let medium of media">
+	<label>
+		<input type="checkbox" [checked]="artListService.getFilterValue('media', medium)"
+			(change)="artListService.setFilterValue('media', medium)">
+		{{ medium }}
+	</label> 
+</div>
+
+<h3>IMAGE TYPE</h3>
+<div *ngFor="let type of types">
+	<label>
+		<input type="checkbox" [checked]="artListService.getFilterValue('types', type)"
+			(change)="artListService.setFilterValue('types', type)">
+		{{ type }}
+	</label> 
+</div>
+
+<h3>TAGS</h3>
+<div *ngFor="let reference of references">
+	<label>
+		<input type="checkbox" [checked]="artListService.getFilterValue('references', reference)"
+			(change)="artListService.setFilterValue('references', reference)">
+		{{ reference }}
+	</label> 
+</div>

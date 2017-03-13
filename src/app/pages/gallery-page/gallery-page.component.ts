@@ -3,6 +3,7 @@ import { ArtListService } from '../../services/art-list.service';
 import { Artwork } from '../../models/artwork';
 
 import { SpinnerComponent } from '../../components/spinner/spinner.component';
+import { FilterMenuComponent } from '../../components/filter-menu/filter-menu.component';
 
 @Component({
   selector: 'app-gallery-page',
@@ -11,7 +12,6 @@ import { SpinnerComponent } from '../../components/spinner/spinner.component';
 })
 export class GalleryPageComponent implements OnInit {
 
-	artworks: Artwork[];
 
 	media: string[];
 	types: string[];
@@ -22,7 +22,6 @@ export class GalleryPageComponent implements OnInit {
   constructor( private artListService: ArtListService ) { }
 
   ngOnInit() {
-  	this.artworks = this.artListService.getFilteredSortedArtworks();
 
   }
 
