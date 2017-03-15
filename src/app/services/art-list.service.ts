@@ -119,6 +119,15 @@ export class ArtListService{
      }
   }
 
+  //Loops through all filters and turns them off
+  public resetAllFiltersOfAllTypes(): void{
+    for (let filterType in this.artFilters){
+      for (let filter in this.artFilters[filterType]){
+        this.artFilters[filterType][filter] = true;
+      }
+    }
+  }
+
 
 
 }

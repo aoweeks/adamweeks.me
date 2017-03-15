@@ -89,3 +89,13 @@ h2{
 
 
 /*======================*/
+
+.fake-link{
+	cursor: pointer;
+	color: #F2642A !important;
+	font-weight: bolder;
+}
+
+.fake-link:hover{
+	color: #FFF !important;
+ }
