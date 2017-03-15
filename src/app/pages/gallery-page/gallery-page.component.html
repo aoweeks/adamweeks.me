@@ -19,6 +19,11 @@
 					</a>
 				</div>
 
+				<div *ngIf="artListService.getFilteredSortedArtworks().length == 0" class="col-xs-12">
+						List is empty
+				</div>
+
+
 
 			</div>
 	
