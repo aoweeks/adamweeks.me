@@ -1,28 +1,47 @@
 <h2>FILTERS</h2>
 
 <h3>MEDIUM</h3>
-<div *ngFor="let medium of media">
+<div *ngFor="let medium of media" class="filter-option-div">
 	<label>
 		<input type="checkbox" [checked]="artListService.getFilterValue('media', medium)"
-			(change)="artListService.setFilterValue('media', medium)">
+			(change)="artListService.setFilterValue('media', medium)" />
+		<svg class="cb-cross" x="0px" y="0px" viewBox="0 0 100 100">
+	  	<line class="cb-line cb-line-1" x1="-100" y1="-100" x2="0" y2="0"/>
+	  	<line class="cb-line cb-line-2" x1="200" y1="-100" x2="100" y2="0"/>
+		</svg>
 		{{ medium }}
 	</label> 
 </div>
 
 <h3>IMAGE TYPE</h3>
-<div *ngFor="let type of types">
+<div *ngFor="let type of types" class="filter-option-div">
 	<label>
 		<input type="checkbox" [checked]="artListService.getFilterValue('types', type)"
-			(change)="artListService.setFilterValue('types', type)">
+			(change)="artListService.setFilterValue('types', type)" />
+		<svg class="cb-cross" x="0px" y="0px" viewBox="0 0 100 100">
+	  	<line class="cb-line cb-line-1" x1="-100" y1="-100" x2="0" y2="0"/>
+	  	<line class="cb-line cb-line-2" x1="200" y1="-100" x2="100" y2="0"/>
+		</svg>
 		{{ type }}
 	</label> 
 </div>
 
 <h3>TAGS</h3>
-<div *ngFor="let reference of references">
+<div *ngFor="let reference of references" class="filter-option-div">
+
+
 	<label>
+
 		<input type="checkbox" [checked]="artListService.getFilterValue('references', reference)"
-			(change)="artListService.setFilterValue('references', reference)">
+			(change)="artListService.setFilterValue('references', reference)" />
+		<svg class="cb-cross" x="0px" y="0px" viewBox="0 0 100 100">
+	  	<line class="cb-line cb-line-1" x1="-100" y1="-100" x2="0" y2="0"/>
+	  	<line class="cb-line cb-line-2" x1="200" y1="-100" x2="100" y2="0"/>
+		</svg>
 		{{ reference }}
 	</label> 
+</div>
+
+<div>
+	
 </div>
