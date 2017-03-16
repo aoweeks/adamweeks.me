@@ -11,6 +11,10 @@ export class ArtListService{
     types: {"Portrait": true, "Illustration": true},
     references: {"Film/TV": true, "Music": true, "Video Games": true} 
   };
+  private sortBy: any = {
+    alpha: 0,
+    chrono: 1
+  }
 
   constructor(private http: Http) {
 
@@ -92,6 +96,19 @@ export class ArtListService{
 
   }
 
+
+  /*========= Sort Stuff ==========*/
+
+  public setSortType(): void{
+
+  }
+
+
+  public sort(): void{
+
+
+
+  }
 
   /*======== Filter Stuff =========*/
 
