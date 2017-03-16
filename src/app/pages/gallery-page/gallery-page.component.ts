@@ -5,10 +5,15 @@ import { Artwork } from '../../models/artwork';
 import { SpinnerComponent } from '../../components/spinner/spinner.component';
 import { FilterMenuComponent } from '../../components/filter-menu/filter-menu.component';
 
+import { routerTransition } from '../../router.animations';
+
+
 @Component({
   selector: 'app-gallery-page',
   templateUrl: './gallery-page.component.html',
-  styleUrls: ['./gallery-page.component.scss']
+  styleUrls: ['./gallery-page.component.scss'],
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class GalleryPageComponent implements OnInit {
 

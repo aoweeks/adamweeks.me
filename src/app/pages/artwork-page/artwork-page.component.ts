@@ -4,10 +4,14 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Artwork } from '../../models/artwork';
 import { ArtListService } from '../../services/art-list.service';
 
+import { routerTransition } from '../../router.animations';
+
 @Component({
   selector: 'app-artwork-page',
   templateUrl: './artwork-page.component.html',
-  styleUrls: ['./artwork-page.component.scss']
+  styleUrls: ['./artwork-page.component.scss'],
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class ArtworkPageComponent implements OnInit {
 
