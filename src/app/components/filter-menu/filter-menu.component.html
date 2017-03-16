@@ -1,6 +1,16 @@
 <h2>FILTERS</h2>
 
 <h3>MEDIUM</h3>
+<span [ngSwitch]="artListService.ifAnyFiltersSet('media')" class="set-all-filters">
+	<a (click)="artListService.setOrClearAllFilters('media', true)">
+		<span *ngSwitchCase="true">SET ALL</span>
+	</a>
+	<a (click)="artListService.setOrClearAllFilters('media', false)">
+		<span *ngSwitchCase="false">CLEAR ALL</span>
+	</a>
+</span>
+
+
 <div *ngFor="let medium of media" class="filter-option-div">
 	<label>
 		<input type="checkbox" [checked]="artListService.getFilterValue('media', medium)"
@@ -13,7 +23,17 @@
 	</label> 
 </div>
 
+
 <h3>IMAGE TYPE</h3>
+<span [ngSwitch]="artListService.ifAnyFiltersSet('types')" class="set-all-filters">
+	<a (click)="artListService.setOrClearAllFilters('types', true)">
+		<span *ngSwitchCase="true">SET ALL</span>
+	</a>
+	<a (click)="artListService.setOrClearAllFilters('types', false)">
+		<span *ngSwitchCase="false">CLEAR ALL</span>
+	</a>
+</span>
+
 <div *ngFor="let type of types" class="filter-option-div">
 	<label>
 		<input type="checkbox" [checked]="artListService.getFilterValue('types', type)"
@@ -27,11 +47,19 @@
 </div>
 
 <h3>TAGS</h3>
+<span [ngSwitch]="artListService.ifAnyFiltersSet('references')" class="set-all-filters">
+	<a (click)="artListService.setOrClearAllFilters('references', true)">
+		<span *ngSwitchCase="true">SET ALL</span>
+	</a>
+	<a (click)="artListService.setOrClearAllFilters('references', false)">
+		<span *ngSwitchCase="false">CLEAR ALL</span>
+	</a>
+</span>
+
+
 <div *ngFor="let reference of references" class="filter-option-div">
 
-
 	<label>
-
 		<input type="checkbox" [checked]="artListService.getFilterValue('references', reference)"
 			(change)="artListService.setFilterValue('references', reference)" />
 		<svg class="cb-cross" x="0px" y="0px" viewBox="0 0 100 100">

@@ -3,14 +3,31 @@ h2 {
 	font-size: 1.5rem;
 }
 
-
 h3 {
+
+	display: inline-block;
 
 	font-family: 'Jaapokki', sans-serif;
 	font-size: 1rem;
 
 	margin-top: 1.5rem;
+
 }
+
+.set-all-filters{
+
+	display: inline;
+
+	top: 1.5rem;
+
+	font-family: 'Jaapokki', sans-serif;
+	color: #F2642A;
+	font-size: 0.66rem;
+
+	float: right;
+	cursor: pointer;
+}
+
 
 .filter-option-div{
 

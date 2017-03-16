@@ -113,9 +113,9 @@ export class ArtListService{
     console.log(this.artFilters);
   }
 
-  public setAllFiltersOn(filterType: string): void{
+  public setOrClearAllFilters(filterType: string, filterValue: boolean): void{
      for(let filter in this.artFilters[filterType]){
-       this.artFilters[filterType][filter] = true;
+       this.artFilters[filterType][filter] = filterValue;
      }
   }
 
@@ -128,6 +128,19 @@ export class ArtListService{
     }
   }
 
+  public ifAnyFiltersSet(filterType: string): boolean{
+   let filtersSet: boolean = false;
+
+   for(let filter in this.artFilters[filterType]){
+      if(this.artFilters[filterType][filter] == false){
+        filtersSet = true;
+        break;
+      }
+    }
+
+
+    return filtersSet;
+  }
 
 
 }
