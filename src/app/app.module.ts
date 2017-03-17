@@ -16,6 +16,7 @@ import { CodePageComponent } from './pages/code-page/code-page.component';
 import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
 
 import { ArtListService } from './services/art-list.service';
+import { BackgroundTrackerService } from './services/background-tracker.service';
 
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FilterMenuComponent } from './components/filter-menu/filter-menu.component';
@@ -42,7 +43,8 @@ import { FilterMenuComponent } from './components/filter-menu/filter-menu.compon
     NgbModule.forRoot()
   ],
   providers: [
-    ArtListService
+    ArtListService,
+    BackgroundTrackerService
    ],
   bootstrap: [AppComponent]
 })
