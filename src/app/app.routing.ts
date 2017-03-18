@@ -11,7 +11,7 @@ import { Error404PageComponent } from './pages/error-404-page/error-404-page.com
 const APP_ROUTES: Routes = [
 	{ path: '', component: HomePageComponent, pathMatch: 'full' },
 	{ path: 'art', component: GalleryPageComponent }, //Need to change back to artpagecomponent later
-	{ path: 'art/gallery', component: GalleryPageComponent },
+	{ path: 'art/gallery', component: GalleryPageComponent, data: { title: 'Gallery' } },
 	{ path: 'art/:id', component: ArtworkPageComponent },
 	{ path: 'code', component: CodePageComponent },
 	{ path: 'about', component: AboutPageComponent },

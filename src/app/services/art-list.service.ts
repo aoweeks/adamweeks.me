@@ -40,7 +40,6 @@ export class ArtListService{
 
   findArtworkById(id: string){
 
-  	console.log("finding artwork!");
 
   	for(let artwork of this.artList) {
 
@@ -99,14 +98,73 @@ export class ArtListService{
 
   /*========= Sort Stuff ==========*/
 
-  public setSortType(): void{
+  public setSortType(sortType: string): void{
 
+  
+    if(this.sortBy[sortType] == 1){
+      this.sortBy[sortType] = 2;
+    }
+    else{
+      this.sortBy[sortType] = 1;
+    }
+
+    for(let sortOption in this.sortBy){
+      if(sortOption != sortType) this.sortBy[sortOption] = 0;
+    }
+
+    this.sortArtworks();
   }
 
 
-  public sort(): void{
+  private sortArtworks(): void{
+
+    let sortProperty: string;
+    let sortAscending: boolean;
+
+    for(let sortOption in this.sortBy){
+      if(this.sortBy[sortOption] == 1){
+        sortProperty = sortOption;
+        sortAscending = true;
+        break;
+      } else if(this.sortBy[sortOption] == 2){
+        sortProperty = sortOption;
+        sortAscending = false;
+        break;
+      }
+    }
+
+    if(sortProperty == 'alpha'){
+      this.artList.sort(function(a, b) {
+        let aUrl = a.getUrl().toUpperCase(); // ignore upper and lowercase
+        let bUrl = b.getUrl().toUpperCase(); // ignore upper and lowercase
+
+        if (aUrl < bUrl) {
+          return sortAscending ?  -1 : 1;
+        }
+        else {
+          return sortAscending ?  1 : -1;
+        }
+
+      });
 
 
+    }else if(sortProperty == 'chrono'){
+      this.artList.sort(function(a, b) {
+        let aUrl = a.getDate().toUpperCase(); // ignore upper and lowercase
+        let bUrl = b.getDate().toUpperCase(); // ignore upper and lowercase
+
+        if (aUrl < bUrl) {
+          return sortAscending ?  1 : -1;
+        }
+        else if (aUrl > bUrl){
+          return sortAscending ?  -1 : 1;
+        }
+        else{
+          return 0;
+        }
+
+      });
+    }
 
   }
 
@@ -120,14 +178,13 @@ export class ArtListService{
 
   //Return whether filter is on, given which filter type, and which filter
   public getFilterValue(filterType: string, whichFilter): boolean{
-    console.log(this.artFilters[filterType][whichFilter]);
+
     return this.artFilters[filterType][whichFilter];
   }
 
   //Toggle whether a particular filter is on
   public setFilterValue(filterType: string, whichFilter): void{
     this.artFilters[filterType][whichFilter] = !this.artFilters[filterType][whichFilter];
-    console.log(this.artFilters);
   }
 
   public setOrClearAllFilters(filterType: string, filterValue: boolean): void{
