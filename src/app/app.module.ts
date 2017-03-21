@@ -20,6 +20,7 @@ import { BackgroundTrackerService } from './services/background-tracker.service'
 
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FilterMenuComponent } from './components/filter-menu/filter-menu.component';
+import { CodeFilterMenuComponent } from './pages/code-page/code-filter-menu/code-filter-menu.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FilterMenuComponent } from './components/filter-menu/filter-menu.compon
     ArtworkPageComponent,
     Error404PageComponent,
     SpinnerComponent,
-    FilterMenuComponent
+    FilterMenuComponent,
+    CodeFilterMenuComponent
   ],
   imports: [
     BrowserModule,
