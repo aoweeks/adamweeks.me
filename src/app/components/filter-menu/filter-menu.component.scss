@@ -16,7 +16,7 @@ h3 {
 
 .filter-icon{
 	height: 1.5rem;
-	width: 1.5rem;
+	width: 2.25rem;
 	cursor: pointer;
 
 	stroke: #555;
@@ -38,6 +38,16 @@ h3 {
 		.filter-icon{
 			stroke: #F11010;
 			fill:  #F11010;
+
+			.triangle{
+				transform: rotate(180deg);
+			}
+		}
+
+		.filter-icon:hover{
+			.triangle{
+				transform: none;
+			}
 		}
 	}
 }
@@ -46,6 +56,10 @@ h3 {
 
 	stroke: #F2642A !important;
 	fill:  #F2642A !important;
+
+		.triangle{
+			transform: rotate(180deg);
+		}
 }
 
 .set-all-filters{
