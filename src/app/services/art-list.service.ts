@@ -115,6 +115,11 @@ export class ArtListService{
     this.sortArtworks();
   }
 
+  public getSortValue(sortType: string): number{
+
+    return this.sortBy[sortType];
+  }
+
 
   private sortArtworks(): void{
 

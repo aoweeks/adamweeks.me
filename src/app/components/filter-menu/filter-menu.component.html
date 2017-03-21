@@ -1,9 +1,15 @@
 <h2>SORT</h2>
-<a (click)="artListService.setSortType('alpha')" class="sort-icon">
-	<span>A-Z</span>
+<a (click)="artListService.setSortType('alpha')" class="sort-icon"
+	[class.current-sort-type]="artListService.getSortValue('alpha')">
+	<span [class.descending]="artListService.getSortValue('alpha') == 2">
+		A-Z
+	</span>
 </a>
-<a (click)="artListService.setSortType('chrono')" class="sort-icon">
-	<span>Time</span>
+<a (click)="artListService.setSortType('chrono')" class="sort-icon"
+	[class.current-sort-type]="artListService.getSortValue('chrono')">
+	<span [class.descending]="artListService.getSortValue('chrono') == 1">
+		Time
+	</span>
 </a>
 <br><br>
 

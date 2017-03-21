@@ -15,8 +15,20 @@ h3 {
 }
 
 .sort-icon{
-	
+
 	cursor: pointer;
+}
+
+.current-sort-type{
+	color: #F2642A !important;
+}
+
+.ascending{
+
+}
+
+.descending{
+	font-weight: bolder;
 }
 
 .set-all-filters{
