@@ -32,16 +32,20 @@ h3 {
 		stroke: #FFF;
 		fill:  #FFF;
 	}
+
+	.descending{
+		
+		.filter-icon{
+			stroke: #F11010;
+			fill:  #F11010;
+		}
+	}
 }
 
 .filter-icon:hover{
 
 	stroke: #F2642A !important;
 	fill:  #F2642A !important;
-}
-
-.descending{
-	font-weight: bolder;
 }
 
 .set-all-filters{
