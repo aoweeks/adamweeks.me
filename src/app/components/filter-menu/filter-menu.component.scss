@@ -14,13 +14,24 @@ h3 {
 
 }
 
-.sort-icon{
-
+.filter-icon{
+	height: 1.5rem;
+	width: 1.5rem;
 	cursor: pointer;
+
+	stroke: #FFF;
+	fill: #FFF;
+
+
+	transition: 0.5s ease-out;
 }
 
 .current-sort-type{
-	color: #F2642A !important;
+	.filter-icon{
+
+		stroke: #F2642A;
+		fill:  #F2642A;
+	}
 }
 
 .ascending{
@@ -61,6 +72,12 @@ h3 {
 		padding: 0 0 0 1.5rem;
 		vertical-align: middle;
 		cursor: pointer;
+
+		transition: color 0.5s ease-out;
+	}
+
+	.unselected{
+		color: #555 !important;
 	}
 
 	label::before {
