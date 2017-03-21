@@ -19,23 +19,25 @@ h3 {
 	width: 1.5rem;
 	cursor: pointer;
 
-	stroke: #FFF;
-	fill: #FFF;
+	stroke: #555;
+	fill: #555;
 
 
-	transition: 0.5s ease-out;
+	// transition: 0.5s ease-out;
 }
 
 .current-sort-type{
 	.filter-icon{
 
-		stroke: #F2642A;
-		fill:  #F2642A;
+		stroke: #FFF;
+		fill:  #FFF;
 	}
 }
 
-.ascending{
+.filter-icon:hover{
 
+	stroke: #F2642A !important;
+	fill:  #F2642A !important;
 }
 
 .descending{
@@ -72,12 +74,16 @@ h3 {
 		padding: 0 0 0 1.5rem;
 		vertical-align: middle;
 		cursor: pointer;
-
-		transition: color 0.5s ease-out;
+// 
+		// transition: color 0.5s ease-out;
 	}
 
 	.unselected{
 		color: #555 !important;
+	}
+
+	label:hover{
+		color: #F2642A !important;
 	}
 
 	label::before {
