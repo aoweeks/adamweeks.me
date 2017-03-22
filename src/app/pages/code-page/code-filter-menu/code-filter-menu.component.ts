@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-code-filter-menu',
+  selector: 'code-filter-menu',
   templateUrl: './code-filter-menu.component.html',
   styleUrls: ['./code-filter-menu.component.scss']
 })
