@@ -14,6 +14,10 @@ h3 {
 
 }
 
+.sort-icon-container{
+	display: inline;
+}
+
 .filter-icon{
 	height: 1.5rem;
 	width: 2.25rem;
@@ -94,6 +98,7 @@ h3 {
 		cursor: pointer;
 // 
 		// transition: color 0.5s ease-out;
+
 	}
 
 	.unselected{
@@ -161,5 +166,27 @@ h3 {
 	    -webkit-transform: translate(-100px, 100px); /* Safari */
 	    transform: translate(-100px, 100px);
 		}
+	}
+}
+
+/*=====Tooltip Stuff======*/
+
+.tool-tip{
+	// visibility: hidden;
+	// opacity: 0;
+
+  /* Position the tooltip text */
+  // position: absolute;
+  // z-index: 150;
+  // bottom: 125%;
+  // left: 50%;
+  // margin-left: -60px;
+
+}
+
+.sort-icon-container:hover{
+	.tool-tip{
+		visibility: visible;
+		opacity: 1;
 	}
 }

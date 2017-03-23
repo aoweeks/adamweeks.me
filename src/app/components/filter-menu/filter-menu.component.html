@@ -1,16 +1,10 @@
 <h2>SORT</h2>
 <a (click)="artListService.setSortType('alpha')" class="sort-icon"
 	[class.current-sort-type]="artListService.getSortValue('alpha')">
-	<span [class.descending]="artListService.getSortValue('alpha') == 2">
+	<div class="sort-icon-container" [class.descending]="artListService.getSortValue('alpha') == 2">
 		<!-- <svg class="sort-icon filter-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"  viewBox="65 65 270 270"> -->
-		<svg class="sort-icon filter-icon" viewBox="0 0 405 270" xmlns="http://www.w3.org/2000/svg">
-
+		<svg class="filter-icon" viewBox="0 0 405 270" xmlns="http://www.w3.org/2000/svg">
 		 <g>
-		  <title>background</title>
-		  <rect fill="none" id="canvas_background" height="272" width="407" y="-1" x="-1"/>
-		 </g>
-		 <g>
-		  <title>Layer 1</title>
 		  <g stroke="null" id="svg_1">
 		   <path stroke="null" id="svg_2" d="m60.280673,71.524l26.151854,0l55.243252,129.822992l-29.651176,0l-11.78517,-28.912383l-54.50588,0l-11.78517,28.912383l-28.912383,0l55.243252,-129.822992l0.001421,0zm29.834453,75.868366l-17.127212,-41.798639l-17.125792,41.798639l34.254425,0l-0.001421,0zm67.566889,32.407442l70.89572,-82.496192l-68.687865,0l0,-24.861808l105.150145,0l0,21.545763l-70.89572,82.496192l70.89572,0l0,24.863228l-107.356579,0l0,-21.547184l-0.001421,0z"/>
 		  </g>
@@ -19,13 +13,15 @@
 		  <path class="triangle" id="svg_10" d="m301.999998,82.843135l76.000002,-0.745098l-37.254903,90.901963l-38.745099,-90.156865z" stroke-opacity="null" stroke-width="20" />
 		 </g>
 		</svg>
-	</span>
+		<span class="tool-tip">Alphabetical</span>
+	</div>
 </a>
+
 <a (click)="artListService.setSortType('chrono')" class="sort-icon"
 	[class.current-sort-type]="artListService.getSortValue('chrono')">
-	<span [class.descending]="artListService.getSortValue('chrono') == 1">
+	<div class="sort-icon-container" [class.descending]="artListService.getSortValue('chrono') == 1">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
-			class="sort-icon filter-icon" viewBox="0 0 559.98 559.98" style="enable-background:new 0 0 559.98 559.98;"
+			class="filter-icon" viewBox="0 0 559.98 559.98" style="enable-background:new 0 0 559.98 559.98;"
 			xml:space="preserve">
 			<g>
 				<path d="M279.99,0C125.601,0,0,125.601,0,279.99c0,154.39,125.601,279.99,279.99,279.99c154.39,0,279.99-125.601,279.99-279.99
@@ -36,7 +32,7 @@
 					c9.26-9.266,9.266-24.284,0-33.544L304.226,280.326z"/>
 			</g>
 		</svg>
-	</span>
+	</div>
 </a>
 <br><br>
 
