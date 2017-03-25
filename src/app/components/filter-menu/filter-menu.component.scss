@@ -15,7 +15,8 @@ h3 {
 }
 
 .sort-icon-container{
-	display: inline;
+	display: inline-block;
+	position: relative;
 }
 
 .filter-icon{
@@ -187,6 +188,13 @@ h3 {
 
   position: absolute;
 
+	top: -100%;
+	left: 0%;
+
+
+	font-family: 'Jaapokki', sans-serif;
+	font-size: 0.5rem;
+
 }
 
 .sort-icon-container:hover{
@@ -194,7 +202,5 @@ h3 {
 		visibility: visible;
 		opacity: 1;
 
-		top: 0%;
-		left: 0%;
 	}
 }
