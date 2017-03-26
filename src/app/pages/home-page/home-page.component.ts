@@ -8,9 +8,7 @@ import { routerTransition } from '../../router.animations';
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
-  providers: [Title],
-  animations: [routerTransition()],
-  host: {'[@routerTransition]': ''}
+  providers: [Title]
 })
 export class HomePageComponent implements OnInit {
 

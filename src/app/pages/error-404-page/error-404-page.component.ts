@@ -5,9 +5,7 @@ import { routerTransition } from '../../router.animations';
 @Component({
   selector: 'app-error404',
   templateUrl: './error-404-page.component.html',
-  styleUrls: ['./error-404-page.component.scss'],
-  animations: [routerTransition()],
-  host: {'[@routerTransition]': ''}
+  styleUrls: ['./error-404-page.component.scss']
 })
 export class Error404PageComponent implements OnInit {
 

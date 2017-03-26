@@ -9,9 +9,7 @@ import { routerTransition } from '../../router.animations';
 @Component({
   selector: 'app-artwork-page',
   templateUrl: './artwork-page.component.html',
-  styleUrls: ['./artwork-page.component.scss'],
-  animations: [routerTransition()],
-  host: {'[@routerTransition]': ''}
+  styleUrls: ['./artwork-page.component.scss']
 })
 export class ArtworkPageComponent implements OnInit {
 
