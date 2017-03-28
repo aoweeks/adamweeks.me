@@ -10,8 +10,6 @@ h3 {
 	font-family: 'Jaapokki', sans-serif;
 	font-size: 1rem;
 
-	margin-top: 1.5rem;
-
 }
 
 .sort-icon-container{
@@ -69,15 +67,14 @@ h3 {
 
 .set-all-filters{
 
-	display: inline;
+	text-align: right;
 
-	top: 1.5rem;
+	top: 0.825rem;
 
 	font-family: 'Jaapokki', sans-serif;
 	color: #F2642A;
 	font-size: 0.66rem;
 
-	float: right;
 	cursor: pointer;
 }
 

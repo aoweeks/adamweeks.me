@@ -13,6 +13,8 @@
 	
 	text-align: center;
 
+	position: relative;
+
 	background: url('/assets/images/background3.png');
 	background-size: 60rem 60rem;
 
@@ -43,8 +45,10 @@
 
 	spinner{
 		position: relative;
+		// width: 30%;
+		// height: auto;
 		// top: 50%;
-		left: 10%;
+		// left: 35%;
 		transition-delay: 1s;
 		z-index: 10;
 	}
