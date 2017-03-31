@@ -7,8 +7,8 @@
 .gallery-card{
 
 
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-left: 2%;
+	margin-right: 2%;
 	margin-bottom: 15%;
 	
 	text-align: center;
@@ -25,8 +25,8 @@
 		transition: opacity 0.5s;
 
 		position: relative;
-		// top: 50%;
-		// left: 5%;
+
+		padding-top: 5%;
 
 		z-index: 100;
 	}
@@ -40,7 +40,9 @@
 		color: #FFF;
 		font-family: 'Jaapokki', sans-serif;
 		font-size: 1.25rem;
-		margin-top: 0.5rem;
+		padding-top: 0.75rem;
+		padding-bottom: 0.5rem;
+
 	}
 
 	spinner{
