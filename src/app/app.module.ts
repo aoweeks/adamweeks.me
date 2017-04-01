@@ -21,7 +21,6 @@ import { BackgroundTrackerService } from './services/background-tracker.service'
 
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FilterMenuComponent } from './components/filter-menu/filter-menu.component';
-import { CodeFilterMenuComponent } from './pages/code-page/code-filter-menu/code-filter-menu.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 
@@ -38,7 +37,6 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
     Error404PageComponent,
     SpinnerComponent,
     FilterMenuComponent,
-    CodeFilterMenuComponent,
     SafePipe,
     FooterBarComponent
   ],
