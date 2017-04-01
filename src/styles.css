@@ -6,7 +6,10 @@
        url('./assets/fonts/jaapokki-regular.ttf')  format('truetype') /* Safari, Android, iOS */
 }
 
-
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body{
 	background-color: #333;
