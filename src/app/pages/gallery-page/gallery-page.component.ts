@@ -2,9 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ArtListService } from '../../services/art-list.service';
 import { Artwork } from '../../models/artwork';
 
-import { SpinnerComponent } from '../../components/spinner/spinner.component';
-import { FilterMenuComponent } from '../../components/filter-menu/filter-menu.component';
-
 import { routerTransition } from '../../router.animations';
 
 
