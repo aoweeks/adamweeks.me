@@ -203,8 +203,6 @@ h3 {
 	font-family: 'Jaapokki', sans-serif;
 	font-size: 0.75rem;
 
-	transition-delay: 0s;
-
 }
 
 
@@ -213,7 +211,6 @@ h3 {
 		visibility: visible;
 		opacity: 1;
 
-		transition-delay: 0.5s;
 	}
 
 
@@ -230,9 +227,6 @@ h3 {
     z-index:90;
     visibility: visible;
     opacity: 1;
-
-
-		transition-delay: 0.5s;
 
     border-style: solid;
     border-width: 0.6rem 0.27rem 0rem 0.27rem;
