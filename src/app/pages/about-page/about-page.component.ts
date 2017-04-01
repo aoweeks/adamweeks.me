@@ -34,10 +34,10 @@ export class AboutPageComponent implements AfterViewInit {
 
  
 
-  	let currentCircle = this.whichCircle % 5;
+  	let currentCircle = this.whichCircle % 4;
   	this.renderer.setElementClass(this.locationCircles[currentCircle], 'expanding', true);
 
-		let oldCircle = currentCircle == 4 ? 0 : currentCircle + 1;
+		let oldCircle = currentCircle == 3 ? 0 : currentCircle + 1;
 		this.renderer.setElementClass(this.locationCircles[oldCircle], 'expanding', false);
   	
   	this.whichCircle++;
