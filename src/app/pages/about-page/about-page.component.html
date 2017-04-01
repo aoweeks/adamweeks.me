@@ -12,6 +12,9 @@
 		</div>
 		<div class="col-xs">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-50.094 -52 831 1304" enable-background="new -50.094 -52 831 1304" xml:space="preserve">
+		<!-- 		<defs>
+					<circle id="location" class="location" fill="none" stroke-width="10" stroke-miterlimit="10" cx="342.112" cy="1038.682" r="0"/>
+				</defs> -->
 
 				<g id="svg3336" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="UKSilhouette.svg" inkscape:version="0.91 r13725">
 		
@@ -548,8 +551,35 @@
 							C482.936,46.704,485.652,46.018,487.518,46.018z"/>
 					</g>
 				</g>
-				<g id="Layer_3">
-					<circle fill="none" stroke="#F08821" stroke-width="10" stroke-miterlimit="10" cx="342.112" cy="1038.682" r="11.114"/>
+				<g id="circles" [innerHtml]="circles | safe">
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+						<circle class="location" />
+
+
+						<!-- 
+
+						{{ '<svg:text stroke="blue">Howdydoody | uppercase </text>' | safe | uppercase }} -->
+
+						
+
+				<!-- 
+					<use xlink:href="#location" />
+					<use xlink:href="#location" /> -->
 				</g>
 			</svg>
 			<h2 class="www-text">WHERE?</h2>
@@ -558,7 +588,7 @@
 
 	<div class="row">
 		<div class="col-xs">
-			Some information about me
+			{{ 'Some information about me' | uppercase }}
 		</div>
 	</div>
 </div>

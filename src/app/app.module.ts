@@ -21,6 +21,7 @@ import { BackgroundTrackerService } from './services/background-tracker.service'
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FilterMenuComponent } from './components/filter-menu/filter-menu.component';
 import { CodeFilterMenuComponent } from './pages/code-page/code-filter-menu/code-filter-menu.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CodeFilterMenuComponent } from './pages/code-page/code-filter-menu/code
     Error404PageComponent,
     SpinnerComponent,
     FilterMenuComponent,
-    CodeFilterMenuComponent
+    CodeFilterMenuComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
