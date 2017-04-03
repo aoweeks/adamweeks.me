@@ -1,8 +1,4 @@
-.test{
-	fill: blue;
-	r: 30;
-}
-
+$radarSpeed: 1.5s;
 
 .location{
 
@@ -24,6 +20,6 @@
 		r: 150;
 		opacity:0;
 
-		transition: r 3s linear, opacity 1s ease 2s;
+		transition: r (3 * $radarSpeed linear), opacity $radarSpeed ease (2 * $radarSpeed);
 	}
 }

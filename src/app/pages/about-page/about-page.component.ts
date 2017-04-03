@@ -24,7 +24,7 @@ export class AboutPageComponent implements AfterViewInit {
 
   	this.locationCircles = this.elementRef.nativeElement.querySelectorAll('.location');
 
-    let timer = Observable.timer(0,1000);
+    let timer = Observable.timer(0,1500);
   	timer.subscribe(t=> {
         this.addLocationCircle();
     });
