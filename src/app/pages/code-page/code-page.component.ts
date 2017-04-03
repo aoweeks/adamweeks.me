@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import { routerTransition } from '../../router.animations';
+import { CodeListService } from '../../services/code-list.service';
+import { Codework } from '../../models/codework';
 
 @Component({
   selector: 'app-code-page',
