@@ -12,6 +12,7 @@ import { ArtPageComponent } from './pages/art-page/art-page.component';
 import { GalleryPageComponent } from './pages/gallery-page/gallery-page.component';
 import { ArtworkPageComponent } from './pages/artwork-page/artwork-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { CodeworkPageComponent } from './pages/codework-page/codework-page.component';
 
 import { CodePageComponent } from './pages/code-page/code-page.component';
 import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
@@ -38,7 +39,8 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
     SpinnerComponent,
     FilterMenuComponent,
     SafePipe,
-    FooterBarComponent
+    FooterBarComponent,
+    CodeworkPageComponent
   ],
   imports: [
     BrowserModule,
