@@ -23,12 +23,20 @@
 	[class.current-sort-type]="artListService.getSortValue('chrono')">
 	<div class="sort-icon-container" [class.descending]="artListService.getSortValue('chrono') == 1">
 		<svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.833 100" enable-background="new 0 0 174.833 100" xml:space="preserve">
-		<g transform="translate(139.171,38.257)"> 
-			<polygon class="triangle" fill="none" stroke-width="7.5" stroke-miterlimit="10" points="-17.754,29.872 17.742,29.872 
-			0,-6.385 "/>
-		</g>
-		<circle fill="none" stroke-width="10" stroke-miterlimit="10" cx="59" cy="50" r="40.5"/>
-		<polygon  points="64,47.86 64,22 54,22 54,52 68.965,67.035 76.035,59.965 "/>
+			<g transform="translate(139.171,38.257)"> 
+				<polygon class="triangle" fill="none" stroke-width="7.5" stroke-miterlimit="10" points="-17.754,29.872 17.742,29.872 
+				0,-6.385 "/>
+			</g>
+			<circle fill="none" stroke-width="10" stroke-miterlimit="10" cx="59" cy="50" r="40.5"/>
+			<g transform="translate(59,50)">
+				<g class="hand">
+					<circle cx="0" cy="0" r="5"/>
+					<line fill="none" stroke-width="10" stroke-miterlimit="10" x1="0" y1="0" x2="0" y2="-28"/>
+				</g>
+				<g class="hand" id="hour-hand">
+					<line fill="none" stroke-width="10" stroke-miterlimit="10" x1="0" y1="0" x2="15.129" y2="12.694"/>
+				</g>
+			</g>
 		</svg>
 		<span class="tool-tip">Chronological</span>
 	</div>
@@ -97,7 +105,7 @@
 	<div class="col-xs-6">	
 		<h3>TAGS</h3>
 	</div>
-	<div class="col-xs-6 set-all-filters" [ngSwitch]="artListService.ifAnyFiltersSet('media')">
+	<div class="col-xs-6 set-all-filters" [ngSwitch]="artListService.ifAnyFiltersSet('references')">
 		<a (click)="artListService.setOrClearAllFilters('references', true)">
 			<span *ngSwitchCase="true">CLEAR ALL</span>
 		</a>

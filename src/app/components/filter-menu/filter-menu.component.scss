@@ -1,3 +1,15 @@
+
+@keyframes rotate-clockwise {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+@keyframes rotate-anti-clockwise {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
 h2 {
 	font-family: 'Jaapokki', sans-serif;
 	font-size: 1.5rem;
@@ -34,6 +46,15 @@ h3 {
 	transition: transform 0.5s ease;
 }
 
+.hand{
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#hour-hand{
+	animation-duration: 24s;
+}
+
 .current-sort-type{
 	.filter-icon{
 
@@ -61,6 +82,10 @@ h3 {
 			.triangle,#A,#Z{
 				transform: none;
 			}
+
+				.hand{
+			    animation-name: rotate-anti-clockwise; 
+				}
 		}
 	}
 }
@@ -70,16 +95,20 @@ h3 {
 	stroke: #F2642A !important;
 	fill:  #F2642A !important;
 
-		.triangle{
-			transform: rotate(-180deg) translateY(-50%);
-		}
+	.triangle{
+		transform: rotate(-180deg) translateY(-50%);
+	}
 
-			#A{
-				transform: translateY(37.9px);
-			}
-			#Z{
-				transform: translateY(-37.9px);
-			}
+	#A{
+		transform: translateY(37.9px);
+	}
+	#Z{
+		transform: translateY(-37.9px);
+	}
+
+	.hand{
+    animation-name: rotate-clockwise;
+  }
 }
 
 .set-all-filters{
@@ -93,6 +122,9 @@ h3 {
 	font-size: 0.66rem;
 
 	cursor: pointer;
+}
+.set-all-filters:hover, .set-all-filters:focus{
+	color: #FFF;
 }
 
 
