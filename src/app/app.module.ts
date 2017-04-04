@@ -23,7 +23,8 @@ import { BackgroundTrackerService } from './services/background-tracker.service'
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FilterMenuComponent } from './components/filter-menu/filter-menu.component';
 import { SafePipe } from './pipes/safe.pipe';
-import { FooterBarComponent } from './footer-bar/footer-bar.component';
+import { FooterBarComponent } from './components/footer-bar/footer-bar.component';
+import { StaticDarkBackgroundComponent } from './components/static-dark-background/static-dark-background.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
     FilterMenuComponent,
     SafePipe,
     FooterBarComponent,
-    CodeworkPageComponent
+    CodeworkPageComponent,
+    StaticDarkBackgroundComponent
   ],
   imports: [
     BrowserModule,

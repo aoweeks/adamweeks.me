@@ -9,11 +9,13 @@
 
 				<div *ngFor="let artwork of artListService.getFilteredSortedArtworks()" class="col-xs-6 col-md-4 col-xl-3">
 					<a routerLink="/art/{{ artwork.url }}">
-						<div class="gallery-card">
-							<spinner [class.unloaded]="loadedThumbnails[artwork.url]"></spinner>
-							<img class="gallery-thumbnail" id="{{ artwork.url }}" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded($event)" [class.loaded]="loadedThumbnails[artwork.url]" />
-							<h3 class="gallery-title">{{ artwork.title }}</h3>
-						</div>
+						<static-dark-background>
+							<div class="gallery-card">
+								<spinner [class.unloaded]="loadedThumbnails[artwork.url]"></spinner>
+								<img class="gallery-thumbnail" id="{{ artwork.url }}" src="/assets/images/art/{{ artwork.url }}/{{ artwork.url }}.{{ artwork.fileFormat }}" (load)="artworkLoaded($event)" [class.loaded]="loadedThumbnails[artwork.url]" />
+								<h3 class="gallery-title">{{ artwork.title }}</h3>
+							</div>
+						</static-dark-background>
 					</a>
 				</div>
 
