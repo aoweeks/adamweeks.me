@@ -86,6 +86,7 @@
   border-style: solid;
 
   -webkit-transition: width 0.3s ease-out 0.3s, height 0.3s ease-out, visibility 0s linear 0.6s;
+  -moz-transition: width 0.3s ease-out 0.3s, height 0.3s ease-out, visibility 0s linear 0.6s;
   transition: width 0.3s ease-out 0.3s, height 0.3s ease-out, visibility 0s linear 0.6s;
 
 }
@@ -116,5 +117,6 @@
 
   visibility: visible;
   -webkit-transition: width 0.3s ease-out, height 0.3s ease-out 0.3s, visibility 0s linear;
+  -moz-transition: width 0.3s ease-out, height 0.3s ease-out 0.3s, visibility 0s linear;
   transition: width 0.3s ease-out, height 0.3s ease-out 0.3s, visibility 0s linear;
 }
