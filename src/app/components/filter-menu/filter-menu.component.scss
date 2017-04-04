@@ -30,6 +30,10 @@ h3 {
 	// transition: 0.5s ease-out;
 }
 
+#A,#Z{
+	transition: transform 0.5s ease;
+}
+
 .current-sort-type{
 	.filter-icon{
 
@@ -44,10 +48,17 @@ h3 {
 			.triangle{
 				transform: rotate(-180deg) translateY(-50%);
 			}
+
+			#A{
+				transform: translateY(37.9px);
+			}
+			#Z{
+				transform: translateY(-37.9px);
+			}
 		}
 
 		.filter-icon:hover{
-			.triangle{
+			.triangle,#A,#Z{
 				transform: none;
 			}
 		}
@@ -62,6 +73,13 @@ h3 {
 		.triangle{
 			transform: rotate(-180deg) translateY(-50%);
 		}
+
+			#A{
+				transform: translateY(37.9px);
+			}
+			#Z{
+				transform: translateY(-37.9px);
+			}
 }
 
 .set-all-filters{
