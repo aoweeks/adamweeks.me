@@ -29,10 +29,4 @@ export class AppComponent {
 	}	
 
 	title = 'App works!';
-
-	debug(input){
-		console.log(input.srcElement.attributes.id.name);
-		let temp = document.getElementById(input.srcElement.attributes.id.name);
-		console.log(temp);
-	}
 }

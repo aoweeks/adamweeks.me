@@ -21,7 +21,6 @@ export class StaticDarkBackgroundComponent implements OnInit {
   	let left:number = this.el.nativeElement.getBoundingClientRect().left;
 
 		this.backgroundPosition = -left + "px " + -top + "px";
-		console.log(this.backgroundPosition);
 	}
 
 
