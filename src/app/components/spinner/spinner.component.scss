@@ -1,10 +1,15 @@
 .loader,
 .loader:after {
   border-radius: 50%;
-  width: 10em;
-  height: 10em;
+  width: 5rem;
+  height: 5rem;
 }
 .loader {
+  
+
+  left: -50%;
+  top: -50%;
+
   margin: 60px auto;
   font-size: 10px;
   position: relative;

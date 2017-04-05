@@ -15,23 +15,25 @@
 
 	position: relative;
 
+	min-height: 10rem;
+
 	.gallery-thumbnail{
 		width: 90%;
 		height: auto;
 
-		
+		left: 0;
+		top: 0;
+
 		opacity: 0;
 		transition: opacity 0.5s;
 
-		position: relative;
-
-		padding-top: 5%;
+		margin-top: 7%;
 
 		z-index: 100;
 	}
 
 	.loaded{
-		opacity: 1;
+		opacity: 0.1;
 	}
 
 
@@ -44,18 +46,21 @@
 
 	}
 
-	spinner{
-		position: relative;
-		// width: 30%;
-		// height: auto;
-		// top: 50%;
-		// left: 35%;
-		transition-delay: 1s;
-		z-index: 10;
-	}
+		spinner{
+			width: inherit;
+			height: 75%;
+
+			left: 50%;
+			top: 25%;
+
+			position: absolute;
+
+			transition-delay: 2s;
+			z-index: 10;
+		}
 
 	.unloaded{
-		display: none;
+		//opacity: 0;
 	}
 }
 
