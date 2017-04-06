@@ -10,7 +10,7 @@ import { Codework } from '../../models/codework';
 })
 export class CodePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private codeListService: CodeListService) { }
 
   ngOnInit() {
   }

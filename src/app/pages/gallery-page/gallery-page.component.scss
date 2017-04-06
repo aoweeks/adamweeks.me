@@ -33,7 +33,7 @@
 	}
 
 	.loaded{
-		opacity: 0.1;
+		opacity: 1;
 	}
 
 
@@ -46,21 +46,21 @@
 
 	}
 
-		spinner{
-			width: inherit;
-			height: 75%;
+	spinner{
+		width: inherit;
+		height: 75%;
 
-			left: 50%;
-			top: 25%;
+		left: 50%;
+		top: 25%;
 
-			position: absolute;
+		position: absolute;
 
-			transition-delay: 2s;
-			z-index: 10;
-		}
+		transition-delay: 0.5s;
+		z-index: 1;
+	}
 
 	.unloaded{
-		//opacity: 0;
+		opacity: 0;
 	}
 }
 

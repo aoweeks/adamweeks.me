@@ -5,7 +5,27 @@
 			"url": "adamweeksdotme",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"type": "Illustration",
+			"blurb": "The site you're looking at right now.",
+			"platforms": [],
+			"technologies":[],
+			"body": ""
+		},
+		{
+			"title": "JackHeal.com",
+			"url": "jackhealdotcom",
+			"images": {}, 
+			"date": "2013-01-01T00:00:00.000Z",
+			"blurb": "Illustration",
+			"platforms": [],
+			"technologies":[],
+			"body": ""
+		},		
+		{
+			"title": "Stud Calculator",
+			"url": "adamweeksdotme",
+			"images": {}, 
+			"date": "2013-01-01T00:00:00.000Z",
+			"blurb": "Mobile app for calculating remaining cards and odds in stud poker.",
 			"platforms": [],
 			"technologies":[],
 			"body": ""
@@ -15,7 +35,7 @@
 			"url": "peachy",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"type": "Illustration",
+			"blurb": "Illustration",
 			"platforms": [],
 			"technologies":[],
 			"body": ""

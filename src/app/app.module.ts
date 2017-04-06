@@ -18,6 +18,7 @@ import { CodePageComponent } from './pages/code-page/code-page.component';
 import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
 
 import { ArtListService } from './services/art-list.service';
+import { CodeListService } from './services/code-list.service';
 import { BackgroundTrackerService } from './services/background-tracker.service';
 
 import { SpinnerComponent } from './components/spinner/spinner.component';
@@ -53,6 +54,7 @@ import { StaticDarkBackgroundComponent } from './components/static-dark-backgrou
   ],
   providers: [
     ArtListService,
+    CodeListService,
     BackgroundTrackerService
    ],
   bootstrap: [AppComponent]

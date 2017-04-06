@@ -4,20 +4,20 @@ export class Codework {
 	private url: string;
 	private images: Object[];
 	private date: string;
-	private type: string;
+	private blurb: string;
 	private platforms: Object[];
 	private technologies: string[];
 	private body: string;
 
 	constructor(title: string, url: string, images: Object[],
-		date: string, type: string, platforms: Object[],
+		date: string, blurb: string, platforms: Object[],
 		technologies: string[], body: string){
 
 		this.title = title;
 		this.url = url;
 		this.images = images;
 		this.date = date;
-		this.type = type;
+		this.blurb = blurb;
 		this.platforms = platforms;
 		this.technologies = technologies;
 		this.body = body;
@@ -40,8 +40,8 @@ export class Codework {
 		return this.date;
 	}
 
-	getType(): string{
-		return this.type;
+	getBlurb(): string{
+		return this.blurb;
 	}
 
 	getPlatforms(): Object[]{
