@@ -6,7 +6,7 @@
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
 			"blurb": "The site you're looking at right now.",
-			"platforms": [],
+			"platforms": ["web"],
 			"technologies":[],
 			"body": ""
 		},
@@ -16,7 +16,7 @@
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
 			"blurb": "Illustration",
-			"platforms": [],
+			"platforms": ["web"],
 			"technologies":[],
 			"body": ""
 		},		
@@ -26,8 +26,8 @@
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
 			"blurb": "Mobile app for calculating remaining cards and odds in stud poker.",
-			"platforms": [],
-			"technologies":[],
+			"platforms": ["android"],
+			"technologies":["angular", "ionic"],
 			"body": ""
 		}
 	]
