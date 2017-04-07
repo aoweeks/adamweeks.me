@@ -18,6 +18,11 @@
 				<h3>TECHNOLOGIES</h3>
 
 
+				<div  *ngFor="let technology of codeListService.getTechnologies()" class="icon-container">
+					<aw-icon [iconName]="technology">
+					</aw-icon>
+				</div>
+
 		</div>
 
 		<div class="col-xs-9">

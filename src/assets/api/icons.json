@@ -7,9 +7,16 @@
 
 
 			],
+	
 			"technologies":[
 				"Angular",
-				"Ionic"
+				"Bootstrap",
+				"Ionic",
+				"jQuery",
+				"Laravel",
+				"Sass",
+				"Snap SVG",
+				"Wordpress"
 
 			]
 }
