@@ -9,20 +9,8 @@
 
 				<h3>PLATFORMS</h3>
 
-				<div class="icon-container">
-					<aw-icon iconName="Android">
-					</aw-icon>
-				</div>
-
-
-				<div class="icon-container">
-					<aw-icon iconName="Windows Phone">
-					</aw-icon>
-				</div>
-
-
-				<div class="icon-container">
-					<aw-icon iconName="Web">
+				<div  *ngFor="let platform of codeListService.getPlatforms()" class="icon-container">
+					<aw-icon [iconName]="platform">
 					</aw-icon>
 				</div>
 

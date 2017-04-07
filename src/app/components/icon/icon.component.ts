@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 export class IconComponent implements OnInit{
 
   @Input()iconName: string;
-  private iconBody: string;
+  private iconBody: string  = "";
 
   constructor(private http: Http) {
  
@@ -31,9 +31,11 @@ export class IconComponent implements OnInit{
   }
 
   addNewIcon(iconName: string, iconBody: any){
-    console.log(iconName, iconBody._body);
-    this.iconBody = iconBody._body;
-    return iconBody;
+
+    if(iconBody.status == 200){
+    	this.iconBody = iconBody._body;
+    }
+    return this.iconBody;
   }
 
   formatIconName(iconName: string):string{

@@ -1,0 +1,15 @@
+{
+	"platforms":[
+				"Android",
+				"Windows Phone",
+				"OSX",
+				"Web"
+
+
+			],
+			"technologies":[
+				"Angular",
+				"Ionic"
+
+			]
+}

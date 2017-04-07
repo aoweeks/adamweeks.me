@@ -45,62 +45,62 @@
 
 
 
-// /*=====Tooltip Stuff======*/
+/*=====Tooltip Stuff======*/
 
-// .tool-tip{
+.tool-tip{
 
-//   visibility: hidden;
-//   opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-//   padding-bottom: 0.25rem;
-//   padding-left: 0.5rem;
-//   padding-right: 0.5rem;
-//   padding-top: 0.4rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.4rem;
 
-//   position: absolute;
+  position: absolute;
 
-//   white-space: nowrap;
+  white-space: nowrap;
 
-// 	top: -125%;
-// 	left: 0%;
-
-
-// 	border-color: white;
-// 	border-style: solid;
-// 	border-width: 0.125rem;
-
-// 	background: url('/assets/images/background1.png');
-
-// 	font-family: 'Jaapokki', sans-serif;
-// 	font-size: 0.75rem;
-
-// }
-
-// .icon-container:hover{
-// 	.tool-tip{
-// 		visibility: visible;
-// 		opacity: 1;
-
-// 	}
+	top: -125%;
+	left: 0%;
 
 
-// 	.tool-tip::after{ //triangle
-//     width: 0;
-//     height: 0;
+	border-color: white;
+	border-style: solid;
+	border-width: 0.125rem;
 
-//     content: "";
+	background: url('/assets/images/background1.png');
 
-//     position: absolute;
-//     bottom:-0.6rem;
-//     left:0.375rem;
+	font-family: 'Jaapokki', sans-serif;
+	font-size: 0.75rem;
 
-//     z-index:90;
-//     visibility: visible;
-//     opacity: 1;
+}
 
-//     border-style: solid;
-//     border-width: 0.6rem 0.27rem 0rem 0.27rem;
-//     border-color: white transparent transparent transparent;
-// 	}
+.icon-container:hover{
+	.tool-tip{
+		visibility: visible;
+		opacity: 1;
 
-// }
+	}
+
+
+	.tool-tip::after{ //triangle
+    width: 0;
+    height: 0;
+
+    content: "";
+
+    position: absolute;
+    bottom:-0.6rem;
+    left:0.375rem;
+
+    z-index:90;
+    visibility: visible;
+    opacity: 1;
+
+    border-style: solid;
+    border-width: 0.6rem 0.27rem 0rem 0.27rem;
+    border-color: white transparent transparent transparent;
+	}
+
+}

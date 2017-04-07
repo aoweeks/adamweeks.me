@@ -7,6 +7,7 @@ import { Codework } from '../models/codework';
 export class CodeListService {
 
 	private codeList: Codework[] = [];
+  private iconList: Object = {"platforms":[], "technologies":[]};
   private codeFilters: any = {
     platforms: {},
     technologies: {}
@@ -19,6 +20,9 @@ export class CodeListService {
   constructor(private http: Http) {
   	this.http.get('assets/api/code.json')
   	  			.subscribe(result => this.codeListPopulator( result.json() ) );
+
+    this.http.get('assets/api/icons.json')
+            .subscribe(result => this.iconListPopulator( result.json() ) );
   }
 
 
@@ -37,6 +41,35 @@ export class CodeListService {
 
   getAllCodes(){
     return this.codeList;
+  }
+
+
+
+
+
+  /* ICON STUFF */
+
+  iconListPopulator(result: JSON){
+    let tempIconList = JSON.parse(JSON.stringify(result));
+
+    for(let platform of tempIconList.platforms){
+      this.iconList["platforms"].push(platform);
+    }
+    
+    for(let technology of tempIconList.technologies){
+      this.iconList["technologies"].push(technology);
+    }
+
+    console.log(this.iconList);
+
+  }
+
+  getPlatforms(): string[]{
+    return this.iconList["platforms"];
+  }
+
+  getTechnologies(): string[]{
+    return this.iconList["technologies"];
   }
 
 }
