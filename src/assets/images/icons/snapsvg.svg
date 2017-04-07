@@ -1,0 +1,54 @@
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="420 0 1080 1080" enable-background="new 420 0 1080 1080" xml:space="preserve">
+<linearGradient id="bottom_1_" gradientUnits="userSpaceOnUse" x1="472.9595" y1="759.3711" x2="472.9594" y2="1747.1836" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<linearGradient id="bottom_2_" gradientUnits="userSpaceOnUse" x1="472.957" y1="772.5859" x2="472.957" y2="1745.6541" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<polygon id="bottom" fill="url(#bottom_1_)" stroke="url(#bottom_2_)" points="961.652,879.199 818.252,809.25 818.412,809.176 
+	818.371,809.156 666,883.477 961.766,1027.73 1258,883.797 1105.086,808.043 "/>
+<radialGradient id="right_2_" cx="176.1768" cy="344.6914" r="879.194" gradientTransform="matrix(1 0 0 -1 539.04 1323.3398)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<radialGradient id="right_3_" cx="176.856" cy="348.7505" r="863.9775" gradientTransform="matrix(1 0 0 -1 539.04 1323.3398)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<polygon id="right_1_" fill="url(#right_2_)" stroke="url(#right_3_)" points="666.363,883.977 666.363,735.32 812.996,663.805 
+	963.82,738.195 "/>
+<radialGradient id="right-2_1_" cx="520.271" cy="711.7305" r="1062.2294" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<radialGradient id="right-2_2_" cx="522.8047" cy="716.2637" r="1051.6472" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<polygon id="right-2" fill="url(#right-2_1_)" stroke="url(#right-2_2_)" points="1124.383,272.176 1124.383,507.227 
+	1124.383,507.227 1124.383,507.227 960.445,587.141 1111.203,662.219 1257.984,590.723 1257.984,188.688 "/>
+<radialGradient id="left_2_" cx="245.1855" cy="633.9023" r="2030.3625" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#004473"/>
+	<stop  offset="1" style="stop-color:#00345F"/>
+</radialGradient>
+<radialGradient id="left_3_" cx="246.334" cy="638.6377" r="2016.5695" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#004473"/>
+	<stop  offset="1" style="stop-color:#00345F"/>
+</radialGradient>
+<polygon id="left_1_" fill="url(#left_2_)" stroke="url(#left_3_)" points="1258,883.844 1258,883.844 1258,735.18 799.992,507.088 
+	799.992,272.035 666.385,188.547 666.385,590.586 "/>
+<linearGradient id="top_1_" gradientUnits="userSpaceOnUse" x1="472.647" y1="764.4043" x2="472.6469" y2="1747.2115" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<linearGradient id="top_2_" gradientUnits="userSpaceOnUse" x1="472.9121" y1="766.1318" x2="472.9121" y2="1734.5587" gradientTransform="matrix(1 0 0 1 489.04 -726.6602)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<polygon id="top" fill="url(#top_1_)" stroke="url(#top_2_)" points="799.584,271.811 799.584,271.764 961.758,192.668 
+	1123.938,271.764 1257.375,188.379 961.648,44.135 666,188.336 666,188.463 799.473,271.867 "/>
+</svg>
