@@ -29,8 +29,7 @@ export class CodeListService {
 
   	for(let codework of codeworks){
   		this.codeList.push(new Codework( codework.title, codework.url,
-  		codework.images, codework.date, 
-  		codework.blurb, codework.platforms, codework.technologies,
+  		codework.images, codework.date, codework.platforms, codework.technologies,
   		codework.body) );
   	}
   	

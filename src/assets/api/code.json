@@ -5,7 +5,6 @@
 			"url": "adamweeksdotme",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"blurb": "The site you're looking at right now.",
 			"platforms": ["web"],
 			"technologies":[],
 			"body": ""
@@ -15,7 +14,6 @@
 			"url": "jackhealdotcom",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"blurb": "Illustration",
 			"platforms": ["web"],
 			"technologies":[],
 			"body": ""
@@ -25,10 +23,9 @@
 			"url": "adamweeksdotme",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"blurb": "Mobile app for calculating remaining cards and odds in stud poker.",
 			"platforms": ["android"],
 			"technologies":["angular", "ionic"],
-			"body": ""
+			"body": "Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker."
 		}
 	]
 }

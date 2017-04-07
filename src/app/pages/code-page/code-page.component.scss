@@ -1,13 +1,31 @@
-.code-panel:not(:first-child){
-	margin: 5%;
+.code-panel{
+	margin-bottom: 2rem;
+
+
+	.code-title{
+		margin: 1rem;
+		color: #F2642A;
+	}
+
+	.panel-body{
+		text-overflow: ellipsis;
+
+	  white-space: nowrap;
+	  overflow: hidden;
+	}
+
 }
 
-.code-title{
-	margin: 1rem;
-	color: #F2642A;
+
+
+
+.code-panel:hover, .code-panel:focus{
+	.code-title{
+		color: #FFF;
+	}
 }
 
-.panel-platform-icons{
+.panel-platform-icons, .panel-body{
 	margin: 1rem;
 }
 
