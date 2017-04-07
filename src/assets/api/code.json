@@ -23,8 +23,8 @@
 			"url": "adamweeksdotme",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"platforms": ["android"],
-			"technologies":["angular", "ionic"],
+			"platforms": ["Android", "Windows Phone"],
+			"technologies":["Angular", "Ionic"],
 			"body": "Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker."
 		}
 	]

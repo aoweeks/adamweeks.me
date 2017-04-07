@@ -1,0 +1,71 @@
+div{
+	height: 2rem;
+	width: 2rem;
+	cursor: pointer;
+
+	stroke: #555;
+	fill: #555;
+
+	display: inline-block;
+	// transition: 0.5s ease-out;
+}
+
+/*=====Tooltip Stuff======*/
+
+.tool-tip{
+
+  visibility: hidden;
+  opacity: 0;
+
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.4rem;
+
+  position: absolute;
+
+  white-space: nowrap;
+
+	top: -125%;
+	left: 0%;
+
+
+	border-color: white;
+	border-style: solid;
+	border-width: 0.125rem;
+
+	background: url('/assets/images/background1.png');
+
+	font-family: 'Jaapokki', sans-serif;
+	font-size: 0.75rem;
+
+}
+
+.icon-container:hover{
+	.tool-tip{
+		visibility: visible;
+		opacity: 1;
+
+	}
+
+
+	.tool-tip::after{ //triangle
+    width: 0;
+    height: 0;
+
+    content: "";
+
+    position: absolute;
+    bottom:-0.6rem;
+    left:0.375rem;
+
+    z-index:90;
+    visibility: visible;
+    opacity: 1;
+
+    border-style: solid;
+    border-width: 0.6rem 0.27rem 0rem 0.27rem;
+    border-color: white transparent transparent transparent;
+	}
+
+}

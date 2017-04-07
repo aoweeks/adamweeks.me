@@ -26,6 +26,7 @@ import { FilterMenuComponent } from './components/filter-menu/filter-menu.compon
 import { SafePipe } from './pipes/safe.pipe';
 import { FooterBarComponent } from './components/footer-bar/footer-bar.component';
 import { StaticDarkBackgroundComponent } from './components/static-dark-background/static-dark-background.component';
+import { IconComponent } from './components/icon/icon.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { StaticDarkBackgroundComponent } from './components/static-dark-backgrou
     SafePipe,
     FooterBarComponent,
     CodeworkPageComponent,
-    StaticDarkBackgroundComponent
+    StaticDarkBackgroundComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
