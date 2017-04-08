@@ -7,9 +7,14 @@
   line-height: 4rem; /* Vertically center the text there */
   
 	text-align: center;
+	color: #555;
+
+	aw-icon{
+		.icon-container{
+			fill: #FFFF00 !important;
+		}
+	}
 }
-
-
 // .social-icon{
 
 // 	position: relative;
