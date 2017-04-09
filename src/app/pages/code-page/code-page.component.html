@@ -34,13 +34,13 @@
 	
 					<static-dark-background>
 						<div class="row">
-							<div class="col-xs-4">
-								LEAD IMAGE
+							<div class="col-xs-5">
+								<img src="/assets/images/code/{{codework.getUrl()}}/{{codework.getImageFilename(0)}}">
 							</div>
-							<div class="col-xs-8">
+							<div class="col-xs-7">
 								<div class="row">
 									<div class="col-xs-6">
-										<a routerLink="/code/{{ codework.url }}">
+										<a routerLink="/code/{{ codework.getUrl() }}">
 											<h2 class="code-title">{{ codework.getTitle() }}</h2>
 										</a>
 									</div>

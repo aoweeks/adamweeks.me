@@ -5,18 +5,23 @@
 	.code-title{
 		padding-top: 1rem;
 		color: #F2642A;
+		font-size: 2rem;
 	}
 
-	.panel-body{
-		text-overflow: ellipsis;
+	// .panel-body{
+	// 	text-overflow: ellipsis;
+	//   overflow: hidden;
+	// }
 
-	  white-space: nowrap;
-	  overflow: hidden;
+	img{
+		width: 100%;
+		height: auto;
+		padding: 5%;
 	}
 
 }
 
-
+sense8 cast
 
 
 .code-panel:hover, .code-panel:focus{

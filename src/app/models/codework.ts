@@ -6,11 +6,12 @@ export class Codework {
 	private date: string;
 	private platforms: Object[];
 	private technologies: string[];
+	private blurb: string;
 	private body: string;
 
 	constructor(title: string, url: string, images: Object[],
 		date: string, platforms: Object[],
-		technologies: string[], body: string){
+		technologies: string[], blurb: string, body: string){
 
 		this.title = title;
 		this.url = url;
@@ -18,6 +19,7 @@ export class Codework {
 		this.date = date;
 		this.platforms = platforms;
 		this.technologies = technologies;
+		this.blurb = blurb;
 		this.body = body;
 
 	}
@@ -30,7 +32,17 @@ export class Codework {
 		return this.url;
 	}
 
-	getImages(): Object[]{
+	getImageFilename(whichImage: number): string{
+
+		if(this.images[whichImage] != null){
+			return this.images[whichImage]["filename"];
+		}
+		else{
+			return null;
+		}
+	}
+
+	getAllImages(): Object[]{
 		return this.images;
 	}
 
@@ -45,6 +57,10 @@ export class Codework {
 
 	getTechnologies(): string[]{
 		return this.technologies;
+	}
+	
+	getBlurb(): string{
+		return this.body;
 	}
 
 	getBody(): string{

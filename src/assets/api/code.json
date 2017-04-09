@@ -3,11 +3,14 @@
 		{
 			"title": "AdamWeeks.me",
 			"url": "adamweeksdotme",
-			"images": {}, 
+			"images": [{
+				"filename": "homepage.png"
+			}], 
 			"date": "2013-01-01T00:00:00.000Z",
 			"platforms": ["web"],
 			"technologies":[],
-			"body": ""
+			"blurb": "My personal site",
+			"body": "My personal/portfolio site for displaying coding and art projects.\n\nBuilt using Angular."
 		},
 		{
 			"title": "JackHeal.com",
@@ -16,6 +19,7 @@
 			"date": "2013-01-01T00:00:00.000Z",
 			"platforms": ["web"],
 			"technologies":[],
+			"blurb": "",
 			"body": ""
 		},		
 		{
@@ -25,6 +29,7 @@
 			"date": "2013-01-01T00:00:00.000Z",
 			"platforms": ["Android", "Windows Phone"],
 			"technologies":["Angular", "Ionic"],
+			"blurb": "",
 			"body": "Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker.Mobile app for calculating remaining cards and odds in stud poker."
 		}
 	]
