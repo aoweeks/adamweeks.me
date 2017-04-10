@@ -3,7 +3,9 @@
 		{
 			"title": "Peachy",
 			"url": "peachy",
-			"additionalimages": {}, 
+			"additionalimages": [{
+				"filename": "peachy.png", "caption": "Peachy"
+				}], 
 			"date": "2013-01-01T00:00:00.000Z",
 			"medium": "Digital",
 			"type": "Illustration",

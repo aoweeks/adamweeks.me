@@ -12,16 +12,17 @@
 	margin-right: 0.5rem;
 	// transition: 0.5s ease-out;
 
-	.secondary-colour{
-		stroke: #444;
-		fill: #444;
-	}
+}
 
-	.tertiary-colour{
-		stroke: #666;
-		fill: #666;
-	}
+.active-icon{
+	fill: #FFF;
+	stroke: #FFF;
+}
 
+
+.icon-container:hover{
+	fill: #F2642A;
+	stroke: #F2642A;
 }
 
 

@@ -60,7 +60,7 @@ export class Codework {
 	}
 	
 	getBlurb(): string{
-		return this.body;
+		return this.blurb;
 	}
 
 	getBody(): string{

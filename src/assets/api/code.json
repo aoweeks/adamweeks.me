@@ -7,17 +7,17 @@
 				"filename": "homepage.png"
 			}], 
 			"date": "2013-01-01T00:00:00.000Z",
-			"platforms": ["web"],
-			"technologies":[],
-			"blurb": "My personal site",
-			"body": "My personal/portfolio site for displaying coding and art projects.\n\nBuilt using Angular."
+			"platforms": ["Web"],
+			"technologies":["Angular", "Bootstrap", "Sass"],
+			"blurb": "My personal/portfolio site for displaying coding and art projects.\n\nBuilt using Angular.",
+			"body": "BODY"
 		},
 		{
 			"title": "JackHeal.com",
 			"url": "jackhealdotcom",
 			"images": {}, 
 			"date": "2013-01-01T00:00:00.000Z",
-			"platforms": ["web"],
+			"platforms": ["Web"],
 			"technologies":[],
 			"blurb": "",
 			"body": ""
