@@ -55,7 +55,7 @@ export class ArtListService{
   	return this.artList;
   }
 
-  getFilteredSortedArtworks(){
+  getFilteredSortedArtworks(): Artwork[]{
 
   	let filteredList: Artwork[] = [];
 
@@ -226,11 +226,13 @@ export class ArtListService{
 
   /*Take the current artwork and whether we're looking for the next artwork or not as arguments. Search the filtered, sorted
   list of artworks and return the URL of the next/previous one */
-  public getAdjacentArtwork(currentArtwork: string, nextArtwork: boolean): string{
+  public getAdjacentArtworks(currentArtworkUrl: string, nextArtwork: boolean): string[]{
+
+    let allFilteredSortedArtworks: Artwork[] = this.getFilteredSortedArtworks();
+    let currentArtwork = allFilteredSortedArtworks[currentArtworkUrl]; //No
 
 
-
-    return '';
+    return ['',''];
   }
 
 }
