@@ -226,10 +226,27 @@ export class ArtListService{
 
   /*Take the current artwork and whether we're looking for the next artwork or not as arguments. Search the filtered, sorted
   list of artworks and return the URL of the next/previous one */
-  public getAdjacentArtworks(currentArtworkUrl: string, nextArtwork: boolean): string[]{
+  public getAdjacentArtworks(currentArtworkUrl: string): string[]{
 
     let allFilteredSortedArtworks: Artwork[] = this.getFilteredSortedArtworks();
-    let currentArtwork = allFilteredSortedArtworks[currentArtworkUrl]; //No
+    let currentArtwork: Artwork = allFilteredSortedArtworks[currentArtworkUrl]; //No
+
+    let prevArtwork: Artwork;
+    let nextArtwork: Artwork;
+
+    if(allFilteredSortedArtworks[currentArtworkUrl].position == allFilteredSortedArtworks.length){
+      //prevArtwork = allFilteredSortedArtworks[]
+    }
+    else{
+      prevArtwork =  allFilteredSortedArtworks[allFilteredSortedArtworks.length - 1];
+    }
+
+    if(allFilteredSortedArtworks[currentArtworkUrl] == allFilteredSortedArtworks.length){
+      //prevArtwork = allFilteredSortedArtworks[]
+    }
+    else{
+      nextArtwork = allFilteredSortedArtworks[0];
+    }
 
 
     return ['',''];
