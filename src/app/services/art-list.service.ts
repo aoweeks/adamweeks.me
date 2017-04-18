@@ -229,7 +229,9 @@ export class ArtListService{
   public getAdjacentArtworks(currentArtworkUrl: string): string[]{
 
     let allFilteredSortedArtworks: Artwork[] = this.getFilteredSortedArtworks();
-    let currentArtwork: Artwork = allFilteredSortedArtworks[currentArtworkUrl]; //No
+    let currentArtwork: Artwork = allFilteredSortedArtworks.find(x => x.getUrl() === currentArtworkUrl);
+    let currentArtworkPosition: number = allFilteredSortedArtworks.indexOf(currentArtwork);
+
 
     let prevArtwork: Artwork;
     let nextArtwork: Artwork;
