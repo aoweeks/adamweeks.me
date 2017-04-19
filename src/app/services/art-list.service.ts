@@ -229,29 +229,29 @@ export class ArtListService{
   public getAdjacentArtworks(currentArtworkUrl: string): string[]{
 
     let allFilteredSortedArtworks: Artwork[] = this.getFilteredSortedArtworks();
-    let currentArtwork: Artwork = allFilteredSortedArtworks.find(x => x.getUrl() === currentArtworkUrl);
+    let currentArtwork: Artwork = allFilteredSortedArtworks.find(x => x.getUrl() == currentArtworkUrl);
     let currentArtworkPosition: number = allFilteredSortedArtworks.indexOf(currentArtwork);
 
 
     let prevArtwork: Artwork;
     let nextArtwork: Artwork;
 
-    if(allFilteredSortedArtworks[currentArtworkUrl].position == allFilteredSortedArtworks.length){
-      //prevArtwork = allFilteredSortedArtworks[]
+    if(currentArtworkPosition == 0) {
+      prevArtwork = allFilteredSortedArtworks[allFilteredSortedArtworks.length - 1];
     }
     else{
-      prevArtwork =  allFilteredSortedArtworks[allFilteredSortedArtworks.length - 1];
+      prevArtwork =  allFilteredSortedArtworks[currentArtworkPosition - 1];
     }
 
-    if(allFilteredSortedArtworks[currentArtworkUrl] == allFilteredSortedArtworks.length){
-      //prevArtwork = allFilteredSortedArtworks[]
-    }
-    else{
+    if(currentArtworkPosition == allFilteredSortedArtworks.length - 1){
       nextArtwork = allFilteredSortedArtworks[0];
     }
+    else{
+      nextArtwork = allFilteredSortedArtworks[currentArtworkPosition + 1];
+    }
 
 
-    return ['',''];
+    return [prevArtwork.getUrl(), nextArtwork.getUrl()];
   }
 
 }
